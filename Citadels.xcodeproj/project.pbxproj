@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7536CA1024136931002739CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536CA0F24136931002739CF /* AppDelegate.swift */; };
+		7536CA1224136931002739CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536CA1124136931002739CF /* SceneDelegate.swift */; };
+		7536CA1424136931002739CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536CA1324136931002739CF /* ContentView.swift */; };
+		7536CA1624136932002739CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7536CA1524136932002739CF /* Assets.xcassets */; };
+		7536CA1924136932002739CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7536CA1824136932002739CF /* Preview Assets.xcassets */; };
+		7536CA1C24136932002739CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7536CA1A24136932002739CF /* LaunchScreen.storyboard */; };
+		7536CA24241369AE002739CF /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536CA23241369AE002739CF /* District.swift */; };
+		7536CA2624136A7C002739CF /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536CA2524136A7C002739CF /* Character.swift */; };
+		7536CA2824136B32002739CF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536CA2724136B32002739CF /* Player.swift */; };
+		7536CA2A24136C67002739CF /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536CA2924136C67002739CF /* GameManager.swift */; };
+		7536CA2C24136D9E002739CF /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536CA2B24136D9E002739CF /* ExampleData.swift */; };
+		754A2EB02423DE2A00EB3EF9 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754A2EAF2423DE2A00EB3EF9 /* PlayerView.swift */; };
+		754A2EB22423DE3D00EB3EF9 /* GameboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754A2EB12423DE3D00EB3EF9 /* GameboardView.swift */; };
+		754A2EB52423F0DF00EB3EF9 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754A2EB42423F0DF00EB3EF9 /* StatusView.swift */; };
+		754A2EB72423F1E600EB3EF9 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754A2EB62423F1E600EB3EF9 /* CharacterView.swift */; };
+		754A2EB9242407AC00EB3EF9 /* EstateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754A2EB8242407AC00EB3EF9 /* EstateView.swift */; };
+		754A2EBB24240A5B00EB3EF9 /* OpponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754A2EBA24240A5B00EB3EF9 /* OpponentView.swift */; };
+		75F316C1241725A10023AD86 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F316C0241725A10023AD86 /* CardsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7536CA0C24136931002739CF /* Citadels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Citadels.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7536CA0F24136931002739CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7536CA1124136931002739CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7536CA1324136931002739CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7536CA1524136932002739CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7536CA1824136932002739CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7536CA1B24136932002739CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7536CA1D24136932002739CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7536CA23241369AE002739CF /* District.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
+		7536CA2524136A7C002739CF /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		7536CA2724136B32002739CF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		7536CA2924136C67002739CF /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		7536CA2B24136D9E002739CF /* ExampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
+		754A2EAF2423DE2A00EB3EF9 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		754A2EB12423DE3D00EB3EF9 /* GameboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardView.swift; sourceTree = "<group>"; };
+		754A2EB42423F0DF00EB3EF9 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		754A2EB62423F1E600EB3EF9 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		754A2EB8242407AC00EB3EF9 /* EstateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstateView.swift; sourceTree = "<group>"; };
+		754A2EBA24240A5B00EB3EF9 /* OpponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpponentView.swift; sourceTree = "<group>"; };
+		75F316C0241725A10023AD86 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7536CA0924136931002739CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7536CA0324136931002739CF = {
+			isa = PBXGroup;
+			children = (
+				7536CA0E24136931002739CF /* Citadels */,
+				7536CA0D24136931002739CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7536CA0D24136931002739CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7536CA0C24136931002739CF /* Citadels.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7536CA0E24136931002739CF /* Citadels */ = {
+			isa = PBXGroup;
+			children = (
+				7536CA1324136931002739CF /* ContentView.swift */,
+				75D2DCE22416EC000001870B /* Data */,
+				75D2DCE12416EBF20001870B /* Views */,
+				7536CA0F24136931002739CF /* AppDelegate.swift */,
+				7536CA1124136931002739CF /* SceneDelegate.swift */,
+				7536CA1524136932002739CF /* Assets.xcassets */,
+				7536CA1A24136932002739CF /* LaunchScreen.storyboard */,
+				7536CA1D24136932002739CF /* Info.plist */,
+				7536CA1724136932002739CF /* Preview Content */,
+			);
+			path = Citadels;
+			sourceTree = "<group>";
+		};
+		7536CA1724136932002739CF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7536CA1824136932002739CF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		754A2EB32423F0C800EB3EF9 /* GameBoard */ = {
+			isa = PBXGroup;
+			children = (
+				754A2EB12423DE3D00EB3EF9 /* GameboardView.swift */,
+				754A2EAF2423DE2A00EB3EF9 /* PlayerView.swift */,
+				754A2EBA24240A5B00EB3EF9 /* OpponentView.swift */,
+				754A2EB42423F0DF00EB3EF9 /* StatusView.swift */,
+				754A2EB62423F1E600EB3EF9 /* CharacterView.swift */,
+				75F316C0241725A10023AD86 /* CardsView.swift */,
+				754A2EB8242407AC00EB3EF9 /* EstateView.swift */,
+			);
+			path = GameBoard;
+			sourceTree = "<group>";
+		};
+		75D2DCE12416EBF20001870B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				754A2EB32423F0C800EB3EF9 /* GameBoard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		75D2DCE22416EC000001870B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7536CA23241369AE002739CF /* District.swift */,
+				7536CA2524136A7C002739CF /* Character.swift */,
+				7536CA2724136B32002739CF /* Player.swift */,
+				7536CA2924136C67002739CF /* GameManager.swift */,
+				7536CA2B24136D9E002739CF /* ExampleData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7536CA0B24136931002739CF /* Citadels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7536CA2024136932002739CF /* Build configuration list for PBXNativeTarget "Citadels" */;
+			buildPhases = (
+				7536CA0824136931002739CF /* Sources */,
+				7536CA0924136931002739CF /* Frameworks */,
+				7536CA0A24136931002739CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Citadels;
+			productName = Citadels;
+			productReference = 7536CA0C24136931002739CF /* Citadels.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7536CA0424136931002739CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Yongkun Li";
+				TargetAttributes = {
+					7536CA0B24136931002739CF = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 7536CA0724136931002739CF /* Build configuration list for PBXProject "Citadels" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7536CA0324136931002739CF;
+			productRefGroup = 7536CA0D24136931002739CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7536CA0B24136931002739CF /* Citadels */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7536CA0A24136931002739CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7536CA1C24136932002739CF /* LaunchScreen.storyboard in Resources */,
+				7536CA1924136932002739CF /* Preview Assets.xcassets in Resources */,
+				7536CA1624136932002739CF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7536CA0824136931002739CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7536CA1024136931002739CF /* AppDelegate.swift in Sources */,
+				7536CA1224136931002739CF /* SceneDelegate.swift in Sources */,
+				754A2EB52423F0DF00EB3EF9 /* StatusView.swift in Sources */,
+				754A2EBB24240A5B00EB3EF9 /* OpponentView.swift in Sources */,
+				7536CA2C24136D9E002739CF /* ExampleData.swift in Sources */,
+				754A2EB72423F1E600EB3EF9 /* CharacterView.swift in Sources */,
+				754A2EB22423DE3D00EB3EF9 /* GameboardView.swift in Sources */,
+				754A2EB02423DE2A00EB3EF9 /* PlayerView.swift in Sources */,
+				75F316C1241725A10023AD86 /* CardsView.swift in Sources */,
+				7536CA2624136A7C002739CF /* Character.swift in Sources */,
+				7536CA2A24136C67002739CF /* GameManager.swift in Sources */,
+				7536CA1424136931002739CF /* ContentView.swift in Sources */,
+				7536CA2824136B32002739CF /* Player.swift in Sources */,
+				754A2EB9242407AC00EB3EF9 /* EstateView.swift in Sources */,
+				7536CA24241369AE002739CF /* District.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7536CA1A24136932002739CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7536CA1B24136932002739CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7536CA1E24136932002739CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7536CA1F24136932002739CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7536CA2124136932002739CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Citadels/Preview Content\"";
+				DEVELOPMENT_TEAM = FF4TNUJ9V8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Citadels/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yongkunli.Citadels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7536CA2224136932002739CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Citadels/Preview Content\"";
+				DEVELOPMENT_TEAM = FF4TNUJ9V8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Citadels/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yongkunli.Citadels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7536CA0724136931002739CF /* Build configuration list for PBXProject "Citadels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7536CA1E24136932002739CF /* Debug */,
+				7536CA1F24136932002739CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7536CA2024136932002739CF /* Build configuration list for PBXNativeTarget "Citadels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7536CA2124136932002739CF /* Debug */,
+				7536CA2224136932002739CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7536CA0424136931002739CF /* Project object */;
+}
