@@ -28,6 +28,7 @@ class District{
     }
     
     func Effect(id: String){
+        guard self.Color == .purple else {return}
         // function body
     }
 }
