@@ -9,28 +9,28 @@
 import SwiftUI
 
 struct StatusView: View {
+    @EnvironmentObject var GM: GameManager
+    let playerID:Int
     var body: some View {
         GeometryReader{ geo in
             VStack{
                 // portrait
                 Circle()
                     .frame(width: geo.size.width*2/3, height: geo.size.height*2/3)
-                    .padding(0)
                 // wealth
                 HStack{
                     Image(systemName: "dollarsign.circle.fill")
                         .resizable()
                         .frame(width: geo.size.width/3, height: geo.size.width/3)
-                    Text("5")
-                    .frame(width: geo.size.width/2, height: geo.size.width/2)
-                }.padding(0)
+                    Text("\(self.GM.PlayerList[self.playerID].Wealth)")
+                }
             }
-        }.frame(width: 100, height: 150)
+        }
     }
 }
 
 struct StatusView_Previews: PreviewProvider {
     static var previews: some View {
-        StatusView()
+        StatusView(playerID: 0)
     }
 }

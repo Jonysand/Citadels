@@ -60,3 +60,32 @@ struct Districts {
 }
 
 
+
+// examples
+struct ExampleData {
+    let characters = Characters()
+    let districts = Districts()
+    var PlayerList: [Player] = []
+    var GM:GameManager = GameManager()
+    
+    init() {
+        // init player list
+        // Player.id==0 -> local player
+        PlayerList.append(Player(id:0, Hand: [districts.Battlefield, districts.Castle],
+                                 Estate: [districts.Cathedral, districts.Church],
+                                 Role: characters.Architect))
+        PlayerList.append(Player(id:1, Hand: [districts.Battlefield, districts.Castle],
+                                 Estate: [districts.Cathedral, districts.Church],
+                                 Role: characters.Merchant))
+        PlayerList.append(Player(id:2, Hand: [districts.Battlefield, districts.Castle],
+                                 Estate: [districts.Cathedral, districts.Church],
+                                 Role: characters.Magician))
+        PlayerList.append(Player(id:3, Hand: [districts.Battlefield, districts.Castle],
+                                 Estate: [districts.Cathedral, districts.Church],
+                                 Role: characters.King))
+        
+        // init game manager
+        GM.PlayerList = PlayerList
+        GM.currentPlayer = PlayerList[0].Role.Index
+    }
+}

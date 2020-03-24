@@ -9,13 +9,17 @@
 import SwiftUI
 
 struct CardsView: View {
+    @EnvironmentObject var GM: GameManager
+    let playerID:Int
     var body: some View {
-        ScrollView(.horizontal){
-            HStack{
-                ForEach(0..<5){_ in
-                    Rectangle()
-                        .frame(width: 100, height: 150)
-                        .padding()
+        GeometryReader{geo in
+            ScrollView(.horizontal){
+                HStack{
+                    ForEach(0...self.GM.PlayerList[self.playerID].Hand.count, id: \.self){_ in
+                        Rectangle()
+                            .frame(width: geo.size.width*5/12)
+                            .padding(geo.size.height/15)
+                    }
                 }
             }
         }
@@ -24,6 +28,6 @@ struct CardsView: View {
 
 struct CardsView_Previews: PreviewProvider {
     static var previews: some View {
-        CardsView().frame(width: 400, height: 200)
+        CardsView(playerID: 0).frame(width: 400, height: 200)
     }
 }

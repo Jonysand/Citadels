@@ -9,12 +9,25 @@
 import SwiftUI
 
 struct OpponentView: View {
+    @EnvironmentObject var GM:GameManager
     var body: some View {
         GeometryReader{geo in
             ZStack{
-                ForEach(getCorners(center: CGPoint.init(x: geo.size.width, y: geo.size.height), corners: 4)){eachOpponentPoint in
-                    
+                ForEach(self.GM.PlayerList[1...], id: \.self){player in
+                    VStack{
+                        StatusView(playerID: player.id)
+                        Image("\(self.GM.PlayerList[player.id].Role.Name)")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .overlay(Circle().stroke(lineWidth: 2).foregroundColor(.black))
+                            .shadow(radius: 5)
+                            .padding(7)
+                            
+                        EstateView(playerID: player.id)
+                    }.frame(width: 75, height: 150)
+                    .offset(player.getPlayerViewPosition(screenCenter: CGPoint.init(x: geo.size.width/2, y: geo.size.height/2), corners: self.GM.PlayerList.count))
                 }
+//                Star(corners: 4)
             }
         }
     }
@@ -42,7 +55,6 @@ struct Star: Shape {
         // move to our initial position
         path.move(to: CGPoint(x: center.x * cos(currentAngle), y: center.y * sin(currentAngle)))
 
-        let eachOppenentOffsetFactor:CGFloat = 0.9;
         // loop over all our points/inner points
         for _ in 0..<corners  {
             // figure out the location of this point
@@ -50,7 +62,7 @@ struct Star: Shape {
             let cosAngle = cos(currentAngle)
 
             // …and add a line to there
-            path.addLine(to: CGPoint(x: center.x * cosAngle * eachOppenentOffsetFactor, y: center.y * sinAngle * eachOppenentOffsetFactor))
+            path.addLine(to: CGPoint(x: center.x * cosAngle, y: center.y * sinAngle))
 
             // move on to the next corner
             currentAngle += angleAdjustment

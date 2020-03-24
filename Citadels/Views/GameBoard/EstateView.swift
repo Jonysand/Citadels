@@ -9,13 +9,17 @@
 import SwiftUI
 
 struct EstateView: View {
+    @EnvironmentObject var GM: GameManager
+    let playerID:Int
     var body: some View {
-        ScrollView(.horizontal){
-            HStack{
-                ForEach(0..<5){_ in
-                    Circle()
-                        .frame(width: 100, height: 150)
-                        .padding()
+        GeometryReader{geo in
+            ScrollView(.horizontal){
+                HStack{
+                    ForEach(0...self.GM.PlayerList[self.playerID].Estate.count, id: \.self){_ in
+                        Circle()
+                            .frame(width: geo.size.width*5/12)
+                            .padding(geo.size.height/15)
+                        }
                 }
             }
         }
@@ -24,6 +28,6 @@ struct EstateView: View {
 
 struct EstateView_Previews: PreviewProvider {
     static var previews: some View {
-        EstateView()
+        EstateView(playerID: 0)
     }
 }

@@ -9,22 +9,24 @@
 import SwiftUI
 
 struct PlayerView: View {
+    @EnvironmentObject var GM:GameManager
     var body: some View {
         HStack{
             VStack{
                 // Status
-                StatusView()
+                StatusView(playerID: 0)
+                    .frame(width: 100, height: 150)
                 // Role
-                CharacterView()
+                CharacterView(playerID: 0)
                     .frame(width: 100, height: 250)
             }
             Divider()
             VStack{
                 // Estate
-                EstateView()
+                EstateView(playerID: 0)
                 Divider()
                 // Hand
-                CardsView()
+                CardsView(playerID: 0)
             }
         }.frame(width: 400, height: 400)
     }

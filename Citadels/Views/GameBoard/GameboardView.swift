@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct GameboardView: View {
+    @EnvironmentObject var GM:GameManager
     var body: some View {
         VStack{
             OpponentView()

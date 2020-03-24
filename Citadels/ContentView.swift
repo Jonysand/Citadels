@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var GM:GameManager
     
     var body: some View {
         GameboardView()
