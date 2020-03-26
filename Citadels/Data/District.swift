@@ -16,10 +16,11 @@ enum DistrictColor {
     case purple
 }
 
-class District{
+class District:ObservableObject{
     var Name: String
     var Cost: Int
     var Color: DistrictColor
+    @Published var isInHand:Bool
     
     init(Name: String, Cost: Int, Color: DistrictColor){
         self.Name = Name

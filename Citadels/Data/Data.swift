@@ -23,7 +23,7 @@ struct Districts {
     // Red
     let Watchtower = District(Name: "Watchtower", Cost: 1, Color: .red)
     let Prison = District(Name: "Prison", Cost: 2, Color: .red)
-    let Battlefield = District(Name: "Battlefield", Cost: 3, Color: .red)
+    let Barracks = District(Name: "Barracks", Cost: 3, Color: .red)
     let Fortress = District(Name: "Fortress", Cost: 5, Color: .red)
     
     // Yellow
@@ -37,7 +37,7 @@ struct Districts {
     let TradingPost = District(Name: "Trading Post", Cost: 2, Color: .green)
     let Docks = District(Name: "Docks", Cost: 3, Color: .green)
     let Harbor = District(Name: "Harbor", Cost: 4, Color: .green)
-    let TownHall = District(Name: "TownHall", Cost: 5, Color: .green)
+    let TownHall = District(Name: "Town Hall", Cost: 5, Color: .green)
     
     // Blue
     let Temple = District(Name: "Temple", Cost: 1, Color: .blue)
@@ -46,7 +46,7 @@ struct Districts {
     let Cathedral = District(Name: "Cathedral", Cost: 5, Color: .blue)
     
     // Purple
-    let HauntedCity = District(Name: "Haunted City", Cost: 2, Color: .purple)
+    let HauntedQuarter = District(Name: "Haunted Quarter", Cost: 2, Color: .purple)
     let Keep = District(Name: "Keep", Cost: 3, Color: .purple)
     let Laboratory = District(Name: "Laboratory", Cost: 5, Color: .purple)
     let Smithy = District(Name: "Smithy", Cost: 5, Color: .purple)
@@ -57,6 +57,8 @@ struct Districts {
     let Library = District(Name: "Library", Cost: 6, Color: .purple)
     let GreatWall = District(Name: "Great Wall", Cost: 6, Color: .purple)
     let SchoolOfMagic = District(Name: "School Of Magic", Cost: 6, Color: .purple)
+    let ImperialTreasury = District(Name: "Imperial Treasury", Cost: 5, Color: .purple)
+    let MapRoom = District(Name: "Map Room", Cost: 5, Color: .purple)
 }
 
 
@@ -71,17 +73,17 @@ struct ExampleData {
     init() {
         // init player list
         // Player.id==0 -> local player
-        PlayerList.append(Player(id:0, Hand: [districts.Battlefield, districts.Castle],
+        PlayerList.append(Player(id:0, Hand: [districts.Temple, districts.Castle],
                                  Estate: [districts.Cathedral, districts.Church],
                                  Role: characters.Architect))
-        PlayerList.append(Player(id:1, Hand: [districts.Battlefield, districts.Castle],
-                                 Estate: [districts.Cathedral, districts.Church],
+        PlayerList.append(Player(id:1, Hand: [districts.Church, districts.Smithy],
+                                 Estate: [districts.Monastary, districts.TownHall],
                                  Role: characters.Merchant))
-        PlayerList.append(Player(id:2, Hand: [districts.Battlefield, districts.Castle],
-                                 Estate: [districts.Cathedral, districts.Church],
+        PlayerList.append(Player(id:2, Hand: [districts.Manor, districts.Prison],
+                                 Estate: [districts.Docks, districts.Market],
                                  Role: characters.Magician))
-        PlayerList.append(Player(id:3, Hand: [districts.Battlefield, districts.Castle],
-                                 Estate: [districts.Cathedral, districts.Church],
+        PlayerList.append(Player(id:3, Hand: [districts.TradingPost, districts.Fortress],
+                                 Estate: [districts.Cathedral, districts.Barracks],
                                  Role: characters.King))
         
         // init game manager

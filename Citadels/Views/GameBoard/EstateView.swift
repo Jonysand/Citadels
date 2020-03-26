@@ -15,11 +15,13 @@ struct EstateView: View {
         GeometryReader{geo in
             ScrollView(.horizontal){
                 HStack{
-                    ForEach(0...self.GM.PlayerList[self.playerID].Estate.count, id: \.self){_ in
-                        Circle()
-                            .frame(width: geo.size.width*5/12)
+                    ForEach(0..<self.GM.PlayerList[self.playerID].Estate.count, id: \.self){i in
+                        Image(self.GM.PlayerList[self.playerID].Estate[i].Name)
+                            .resizable()
+                            .frame(width: geo.size.width*3/9, height: geo.size.width*5/9)
+                            .overlay(Rectangle().stroke(lineWidth: 3).foregroundColor(.black))
                             .padding(geo.size.height/15)
-                        }
+                    }
                 }
             }
         }
