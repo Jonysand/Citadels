@@ -17,6 +17,18 @@ struct Characters {
     let Merchant = Character(Index: 6, Name: "Merchant")
     let Architect = Character(Index: 7, Name: "Architect")
     let Warlord = Character(Index: 8, Name: "Warlord")
+    var list: [Character] = []
+    
+    init(){
+        list.append(Assasin)
+        list.append(Thief)
+        list.append(Magician)
+        list.append(King)
+        list.append(Bishop)
+        list.append(Merchant)
+        list.append(Architect)
+        list.append(Warlord)
+    }
 }
 
 struct Districts {
@@ -61,30 +73,72 @@ struct Districts {
     let MapRoom = District(Name: "Map Room", Cost: 5, Color: .purple)
 }
 
+// init Full Deck
+func initDeck(Deck: inout [District]){
+    let districts = Districts()
+    for _ in 0..<3 {Deck.append(districts.Watchtower)}
+    for _ in 0..<3 {Deck.append(districts.Prison)}
+    for _ in 0..<3 {Deck.append(districts.Barracks)}
+    for _ in 0..<2 {Deck.append(districts.Fortress)}
+    for _ in 0..<5 {Deck.append(districts.Manor)}
+    for _ in 0..<4 {Deck.append(districts.Castle)}
+    for _ in 0..<3 {Deck.append(districts.Palace)}
+    for _ in 0..<5 {Deck.append(districts.Tavern)}
+    for _ in 0..<4 {Deck.append(districts.Market)}
+    for _ in 0..<3 {Deck.append(districts.TradingPost)}
+    for _ in 0..<3 {Deck.append(districts.Docks)}
+    for _ in 0..<3 {Deck.append(districts.Harbor)}
+    for _ in 0..<2 {Deck.append(districts.TownHall)}
+    for _ in 0..<3 {Deck.append(districts.Temple)}
+    for _ in 0..<3 {Deck.append(districts.Church)}
+    for _ in 0..<3 {Deck.append(districts.Monastary)}
+    for _ in 0..<2 {Deck.append(districts.Cathedral)}
+    Deck.append(districts.HauntedQuarter)
+    for _ in 0..<2 {Deck.append(districts.Keep)}
+    Deck.append(districts.Laboratory)
+    Deck.append(districts.Smithy)
+    Deck.append(districts.Observatory)
+    Deck.append(districts.Graveyard)
+    Deck.append(districts.DragonGate)
+    Deck.append(districts.University)
+    Deck.append(districts.Library)
+    Deck.append(districts.GreatWall)
+    Deck.append(districts.SchoolOfMagic)
+    Deck.shuffle()
+}
 
 
 // examples
 struct ExampleData {
     let characters = Characters()
-    let districts = Districts()
     var PlayerList: [Player] = []
     var GM:GameManager = GameManager()
     
     init() {
         // init player list
         // Player.id==0 -> local player
-        PlayerList.append(Player(id:0, Hand: [districts.Temple, districts.Castle],
-                                 Estate: [districts.Cathedral, districts.Church],
-                                 Role: characters.Architect))
-        PlayerList.append(Player(id:1, Hand: [districts.Church, districts.Smithy],
-                                 Estate: [districts.Monastary, districts.TownHall],
-                                 Role: characters.Merchant))
-        PlayerList.append(Player(id:2, Hand: [districts.Manor, districts.Prison],
-                                 Estate: [districts.Docks, districts.Market],
-                                 Role: characters.Magician))
-        PlayerList.append(Player(id:3, Hand: [districts.TradingPost, districts.Fortress],
-                                 Estate: [districts.Cathedral, districts.Barracks],
-                                 Role: characters.King))
+        for i in 0..<4 {
+            // draw cards
+            var handList: [District] = []
+            for _ in 0..<Int.random(in: 1..<5){
+                let drawIndex = Int.random(in: 0..<GM.Deck.count)
+                let oneCard = GM.Deck[drawIndex]
+                GM.Deck.remove(at: drawIndex)
+                oneCard.currentState = 1
+                handList.append(oneCard)
+            }
+            // put estates
+            var estateList: [District] = []
+            for _ in 0..<Int.random(in: 1..<5){
+                let drawIndex = Int.random(in: 0..<GM.Deck.count)
+                let oneCard = GM.Deck[drawIndex]
+                GM.Deck.remove(at: drawIndex)
+                oneCard.currentState = 2
+                estateList.append(oneCard)
+            }
+            let player = Player(id: i, Hand: handList, Estate: estateList, Role: characters.list[i])
+            PlayerList.append(player)
+        }
         
         // init game manager
         GM.PlayerList = PlayerList

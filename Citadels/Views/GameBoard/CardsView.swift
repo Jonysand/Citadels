@@ -22,18 +22,22 @@ struct CardsView: View {
                             .shadow(radius: 5)
                             .overlay(Rectangle().stroke(lineWidth: 3).foregroundColor(.black).shadow(radius: 5).blur(radius: 0.5))
                             .padding(geo.size.height/15)
-                        // for playing a card
-                            .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .global)
-                                .onChanged({ value in
-                                    
-                                })
-                                .onEnded({ value in
-                                    
-                                })
-                        )
+                            // for playing a card
+                            .contextMenu{
+                                Button(action: {
+                                    self.GM.PlayerList[self.playerID].Hand[i].currentState = 2
+                                    self.GM.draggedCard = DraggedCard(card: self.GM.PlayerList[self.playerID].Hand[i])
+                                    self.GM.PlayerList[self.playerID].Hand.remove(at: i)
+                                    self.GM.PlayerList[self.playerID].Estate.insert(self.GM.draggedCard!.card, at: 0)
+                                    self.GM.draggedCard = nil;
+                                }) {
+                                    Text("Build")
+                                    Image(systemName: "house")
+                                }
+                            }
                     }
                 }
-            }
+            }.animation(.easeInOut)
         }
     }
 }

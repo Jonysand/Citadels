@@ -23,7 +23,7 @@ struct EstateView: View {
                             .padding(geo.size.height/15)
                     }
                 }
-            }
+            }.animation(.easeInOut)
         }
     }
 }
