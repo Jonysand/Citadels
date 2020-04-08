@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftUI
+import GameSpark
 
 struct DraggedCard{
     var card:District
@@ -28,5 +29,7 @@ class GameManager:ObservableObject{
     init() {
         // init full deck
         initDeck(Deck: &Deck)
+        
+        // Game Spart settup
     }
 }

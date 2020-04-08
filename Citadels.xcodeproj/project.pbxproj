@@ -27,6 +27,111 @@
 		754A2EB9242407AC00EB3EF9 /* EstateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754A2EB8242407AC00EB3EF9 /* EstateView.swift */; };
 		754A2EBB24240A5B00EB3EF9 /* OpponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754A2EBA24240A5B00EB3EF9 /* OpponentView.swift */; };
 		755DA57C242A99C900CC712A /* EachOpponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755DA57B242A99C900CC712A /* EachOpponentView.swift */; };
+		759B7EDF243D401F001ECF3D /* GameSparksRT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E2B243D401F001ECF3D /* GameSparksRT.cpp */; };
+		759B7EE0243D401F001ECF3D /* RTData.Serializer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E2E243D401F001ECF3D /* RTData.Serializer.cpp */; };
+		759B7EE1243D401F001ECF3D /* LimitedPositionStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E2F243D401F001ECF3D /* LimitedPositionStream.cpp */; };
+		759B7EE2243D401F001ECF3D /* RTVal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E34243D401F001ECF3D /* RTVal.cpp */; };
+		759B7EE3243D401F001ECF3D /* Packet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E35243D401F001ECF3D /* Packet.cpp */; };
+		759B7EE4243D401F001ECF3D /* ReusableBinaryWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E39243D401F001ECF3D /* ReusableBinaryWriter.cpp */; };
+		759B7EE5243D401F001ECF3D /* PositionStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E3A243D401F001ECF3D /* PositionStream.cpp */; };
+		759B7EE6243D401F001ECF3D /* FastConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E3E243D401F001ECF3D /* FastConnection.cpp */; };
+		759B7EE7243D401F001ECF3D /* ReliableConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E3F243D401F001ECF3D /* ReliableConnection.cpp */; };
+		759B7EE8243D401F001ECF3D /* Connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E41243D401F001ECF3D /* Connection.cpp */; };
+		759B7EE9243D401F001ECF3D /* RTData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E43243D401F001ECF3D /* RTData.cpp */; };
+		759B7EEA243D401F001ECF3D /* LoginCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E4D243D401F001ECF3D /* LoginCommand.cpp */; };
+		759B7EEB243D401F001ECF3D /* CustomRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E4E243D401F001ECF3D /* CustomRequest.cpp */; };
+		759B7EEC243D401F001ECF3D /* PingCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E50243D401F001ECF3D /* PingCommand.cpp */; };
+		759B7EED243D401F001ECF3D /* UDPConnectMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E56243D401F001ECF3D /* UDPConnectMessage.cpp */; };
+		759B7EEE243D401F001ECF3D /* PlayerConnectMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E57243D401F001ECF3D /* PlayerConnectMessage.cpp */; };
+		759B7EEF243D401F001ECF3D /* PingResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E5A243D401F001ECF3D /* PingResult.cpp */; };
+		759B7EF0243D401F001ECF3D /* PlayerDisconnectMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E5B243D401F001ECF3D /* PlayerDisconnectMessage.cpp */; };
+		759B7EF1243D401F001ECF3D /* LoginResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E5C243D401F001ECF3D /* LoginResult.cpp */; };
+		759B7EF2243D401F001ECF3D /* CustomCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E5D243D401F001ECF3D /* CustomCommand.cpp */; };
+		759B7EF3243D401F001ECF3D /* CommandFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E5E243D401F001ECF3D /* CommandFactory.cpp */; };
+		759B7EF4243D401F001ECF3D /* LogCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E5F243D401F001ECF3D /* LogCommand.cpp */; };
+		759B7EF5243D401F001ECF3D /* ActionCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E60243D401F001ECF3D /* ActionCommand.cpp */; };
+		759B7EF6243D401F001ECF3D /* RTSessionImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E61243D401F001ECF3D /* RTSessionImpl.cpp */; };
+		759B7EF7243D401F001ECF3D /* x509_create.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E63243D401F001ECF3D /* x509_create.c */; };
+		759B7EF8243D401F001ECF3D /* x509_crt.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E64243D401F001ECF3D /* x509_crt.c */; };
+		759B7EF9243D401F001ECF3D /* aes.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E65243D401F001ECF3D /* aes.c */; };
+		759B7EFA243D401F001ECF3D /* md4.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E66243D401F001ECF3D /* md4.c */; };
+		759B7EFB243D401F001ECF3D /* ssl_srv.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E67243D401F001ECF3D /* ssl_srv.c */; };
+		759B7EFC243D401F001ECF3D /* camellia.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E68243D401F001ECF3D /* camellia.c */; };
+		759B7EFD243D401F001ECF3D /* pk_wrap.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E69243D401F001ECF3D /* pk_wrap.c */; };
+		759B7EFE243D401F001ECF3D /* pk.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E6A243D401F001ECF3D /* pk.c */; };
+		759B7EFF243D401F001ECF3D /* ecdh.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E6B243D401F001ECF3D /* ecdh.c */; };
+		759B7F00243D401F001ECF3D /* ssl_tls.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E6C243D401F001ECF3D /* ssl_tls.c */; };
+		759B7F01243D401F001ECF3D /* x509_crl.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E6D243D401F001ECF3D /* x509_crl.c */; };
+		759B7F02243D401F001ECF3D /* cipher_wrap.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E6E243D401F001ECF3D /* cipher_wrap.c */; };
+		759B7F03243D401F001ECF3D /* des.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E6F243D401F001ECF3D /* des.c */; };
+		759B7F04243D401F001ECF3D /* ssl_cookie.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E70243D401F001ECF3D /* ssl_cookie.c */; };
+		759B7F05243D401F001ECF3D /* ctr_drbg.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E71243D401F001ECF3D /* ctr_drbg.c */; };
+		759B7F06243D401F001ECF3D /* aesni.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E72243D401F001ECF3D /* aesni.c */; };
+		759B7F07243D401F001ECF3D /* dhm.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E73243D401F001ECF3D /* dhm.c */; };
+		759B7F08243D401F001ECF3D /* ssl_cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E74243D401F001ECF3D /* ssl_cache.c */; };
+		759B7F09243D401F001ECF3D /* ssl_ciphersuites.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E75243D401F001ECF3D /* ssl_ciphersuites.c */; };
+		759B7F0A243D401F001ECF3D /* hmac_drbg.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E76243D401F001ECF3D /* hmac_drbg.c */; };
+		759B7F0B243D401F001ECF3D /* rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E77243D401F001ECF3D /* rsa.c */; };
+		759B7F0C243D401F001ECF3D /* ssl_ticket.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E78243D401F001ECF3D /* ssl_ticket.c */; };
+		759B7F0D243D401F001ECF3D /* asn1parse.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E79243D401F001ECF3D /* asn1parse.c */; };
+		759B7F0E243D401F001ECF3D /* certs.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E7A243D401F001ECF3D /* certs.c */; };
+		759B7F0F243D401F001ECF3D /* pkwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E7B243D401F001ECF3D /* pkwrite.c */; };
+		759B7F10243D401F001ECF3D /* gcm.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E7C243D401F001ECF3D /* gcm.c */; };
+		759B7F11243D401F001ECF3D /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E7D243D401F001ECF3D /* sha1.c */; };
+		759B7F12243D401F001ECF3D /* asn1write.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E7E243D401F001ECF3D /* asn1write.c */; };
+		759B7F13243D401F001ECF3D /* havege.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E7F243D401F001ECF3D /* havege.c */; };
+		759B7F14243D401F001ECF3D /* ccm.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E80243D401F001ECF3D /* ccm.c */; };
+		759B7F15243D401F001ECF3D /* version_features.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E81243D401F001ECF3D /* version_features.c */; };
+		759B7F16243D401F001ECF3D /* entropy_poll.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E82243D401F001ECF3D /* entropy_poll.c */; };
+		759B7F17243D401F001ECF3D /* x509write_csr.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E83243D401F001ECF3D /* x509write_csr.c */; };
+		759B7F18243D401F001ECF3D /* platform.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E84243D401F001ECF3D /* platform.c */; };
+		759B7F19243D401F001ECF3D /* bignum.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E85243D401F001ECF3D /* bignum.c */; };
+		759B7F1A243D401F001ECF3D /* pkparse.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E86243D401F001ECF3D /* pkparse.c */; };
+		759B7F1B243D401F001ECF3D /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E87243D401F001ECF3D /* debug.c */; };
+		759B7F1C243D401F001ECF3D /* ripemd160.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E88243D401F001ECF3D /* ripemd160.c */; };
+		759B7F1D243D401F001ECF3D /* ssl_cli.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E89243D401F001ECF3D /* ssl_cli.c */; };
+		759B7F1E243D401F001ECF3D /* blowfish.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E8A243D401F001ECF3D /* blowfish.c */; };
+		759B7F1F243D401F001ECF3D /* pkcs5.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E8B243D401F001ECF3D /* pkcs5.c */; };
+		759B7F20243D401F001ECF3D /* pem.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E8C243D401F001ECF3D /* pem.c */; };
+		759B7F21243D401F001ECF3D /* oid.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E8D243D401F001ECF3D /* oid.c */; };
+		759B7F22243D401F001ECF3D /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E8E243D401F001ECF3D /* error.c */; };
+		759B7F23243D401F001ECF3D /* md2.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E8F243D401F001ECF3D /* md2.c */; };
+		759B7F24243D401F001ECF3D /* md_wrap.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E90243D401F001ECF3D /* md_wrap.c */; };
+		759B7F25243D401F001ECF3D /* x509_csr.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E91243D401F001ECF3D /* x509_csr.c */; };
+		759B7F26243D401F001ECF3D /* pkcs11.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E92243D401F001ECF3D /* pkcs11.c */; };
+		759B7F27243D401F001ECF3D /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E93243D401F001ECF3D /* base64.c */; };
+		759B7F28243D401F001ECF3D /* memory_buffer_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E94243D401F001ECF3D /* memory_buffer_alloc.c */; };
+		759B7F29243D401F001ECF3D /* net.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E95243D401F001ECF3D /* net.c */; };
+		759B7F2A243D401F001ECF3D /* ecp.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E96243D401F001ECF3D /* ecp.c */; };
+		759B7F2B243D401F001ECF3D /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E97243D401F001ECF3D /* version.c */; };
+		759B7F2C243D401F001ECF3D /* x509.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E98243D401F001ECF3D /* x509.c */; };
+		759B7F2D243D401F001ECF3D /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E99243D401F001ECF3D /* sha256.c */; };
+		759B7F2E243D401F001ECF3D /* ecp_curves.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E9A243D401F001ECF3D /* ecp_curves.c */; };
+		759B7F2F243D401F001ECF3D /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E9B243D401F001ECF3D /* md5.c */; };
+		759B7F30243D401F001ECF3D /* arc4.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E9C243D401F001ECF3D /* arc4.c */; };
+		759B7F31243D401F001ECF3D /* timing.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E9D243D401F001ECF3D /* timing.c */; };
+		759B7F32243D401F001ECF3D /* xtea.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E9E243D401F001ECF3D /* xtea.c */; };
+		759B7F33243D401F001ECF3D /* x509write_crt.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7E9F243D401F001ECF3D /* x509write_crt.c */; };
+		759B7F34243D401F001ECF3D /* threading.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7EA0243D401F001ECF3D /* threading.c */; };
+		759B7F35243D401F001ECF3D /* padlock.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7EA1243D401F001ECF3D /* padlock.c */; };
+		759B7F36243D401F001ECF3D /* pkcs12.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7EA2243D401F001ECF3D /* pkcs12.c */; };
+		759B7F37243D401F001ECF3D /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7EA3243D401F001ECF3D /* entropy.c */; };
+		759B7F38243D401F001ECF3D /* sha512.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7EA4243D401F001ECF3D /* sha512.c */; };
+		759B7F39243D401F001ECF3D /* md.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7EA5243D401F001ECF3D /* md.c */; };
+		759B7F3A243D401F001ECF3D /* cipher.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7EA6243D401F001ECF3D /* cipher.c */; };
+		759B7F3B243D401F001ECF3D /* ecdsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 759B7EA7243D401F001ECF3D /* ecdsa.c */; };
+		759B7F3C243D401F001ECF3D /* Socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7EB2243D401F001ECF3D /* Socket.cpp */; };
+		759B7F3D243D401F001ECF3D /* TcpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7EB5243D401F001ECF3D /* TcpClient.cpp */; };
+		759B7F3E243D401F001ECF3D /* TLSSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7EB7243D401F001ECF3D /* TLSSocket.cpp */; };
+		759B7F3F243D401F001ECF3D /* UdpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7EB9243D401F001ECF3D /* UdpClient.cpp */; };
+		759B7F40243D401F001ECF3D /* NetworkStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7EBB243D401F001ECF3D /* NetworkStream.cpp */; };
+		759B7F41243D401F001ECF3D /* MemoryStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7EC4243D401F001ECF3D /* MemoryStream.cpp */; };
+		759B7F42243D401F001ECF3D /* Stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7EC9243D401F001ECF3D /* Stream.cpp */; };
+		759B7F43243D401F001ECF3D /* BinaryWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7ECA243D401F001ECF3D /* BinaryWriter.cpp */; };
+		759B7F44243D401F001ECF3D /* BinaryReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7ECB243D401F001ECF3D /* BinaryReader.cpp */; };
+		759B7F45243D401F001ECF3D /* UTF8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7ED2243D401F001ECF3D /* UTF8.cpp */; };
+		759B7F46243D401F001ECF3D /* Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759B7ED5243D401F001ECF3D /* Thread.cpp */; };
+		759B7F47243D401F001ECF3D /* GSRT.mm in Sources */ = {isa = PBXBuildFile; fileRef = 759B7EDE243D401F001ECF3D /* GSRT.mm */; };
 		75F316C1241725A10023AD86 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F316C0241725A10023AD86 /* CardsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +158,250 @@
 		754A2EB8242407AC00EB3EF9 /* EstateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstateView.swift; sourceTree = "<group>"; };
 		754A2EBA24240A5B00EB3EF9 /* OpponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpponentView.swift; sourceTree = "<group>"; };
 		755DA57B242A99C900CC712A /* EachOpponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachOpponentView.swift; sourceTree = "<group>"; };
+		759B7DDA243D401E001ECF3D /* RTVal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RTVal.hpp; sourceTree = "<group>"; };
+		759B7DDB243D401E001ECF3D /* IRTSessionListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IRTSessionListener.hpp; sourceTree = "<group>"; };
+		759B7DDC243D401E001ECF3D /* Forwards.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Forwards.hpp; sourceTree = "<group>"; };
+		759B7DDD243D401E001ECF3D /* GSLinking.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GSLinking.hpp; sourceTree = "<group>"; };
+		759B7DDE243D401E001ECF3D /* RTData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RTData.hpp; sourceTree = "<group>"; };
+		759B7DDF243D401E001ECF3D /* GameSparksRT.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameSparksRT.hpp; sourceTree = "<group>"; };
+		759B7DE0243D401E001ECF3D /* IRTSession.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IRTSession.hpp; sourceTree = "<group>"; };
+		759B7DE2243D401E001ECF3D /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
+		759B7DE3243D401E001ECF3D /* check_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = check_config.h; sourceTree = "<group>"; };
+		759B7DE4243D401E001ECF3D /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
+		759B7DE5243D401E001ECF3D /* md2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md2.h; sourceTree = "<group>"; };
+		759B7DE6243D401E001ECF3D /* oid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oid.h; sourceTree = "<group>"; };
+		759B7DE7243D401E001ECF3D /* pkcs5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs5.h; sourceTree = "<group>"; };
+		759B7DE8243D401E001ECF3D /* ripemd160.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd160.h; sourceTree = "<group>"; };
+		759B7DE9243D401E001ECF3D /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
+		759B7DEA243D401E001ECF3D /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		759B7DEB243D401F001ECF3D /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
+		759B7DEC243D401F001ECF3D /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		759B7DED243D401F001ECF3D /* ecp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecp.h; sourceTree = "<group>"; };
+		759B7DEE243D401F001ECF3D /* net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net.h; sourceTree = "<group>"; };
+		759B7DEF243D401F001ECF3D /* cipher_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cipher_internal.h; sourceTree = "<group>"; };
+		759B7DF0243D401F001ECF3D /* md_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md_internal.h; sourceTree = "<group>"; };
+		759B7DF1243D401F001ECF3D /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		759B7DF2243D401F001ECF3D /* pkcs11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs11.h; sourceTree = "<group>"; };
+		759B7DF3243D401F001ECF3D /* ssl_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl_internal.h; sourceTree = "<group>"; };
+		759B7DF4243D401F001ECF3D /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		759B7DF5243D401F001ECF3D /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		759B7DF6243D401F001ECF3D /* memory_buffer_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memory_buffer_alloc.h; sourceTree = "<group>"; };
+		759B7DF7243D401F001ECF3D /* x509_csr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_csr.h; sourceTree = "<group>"; };
+		759B7DF8243D401F001ECF3D /* xtea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xtea.h; sourceTree = "<group>"; };
+		759B7DF9243D401F001ECF3D /* threading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threading.h; sourceTree = "<group>"; };
+		759B7DFA243D401F001ECF3D /* compat-1.3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "compat-1.3.h"; sourceTree = "<group>"; };
+		759B7DFB243D401F001ECF3D /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		759B7DFC243D401F001ECF3D /* timing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timing.h; sourceTree = "<group>"; };
+		759B7DFD243D401F001ECF3D /* arc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arc4.h; sourceTree = "<group>"; };
+		759B7DFE243D401F001ECF3D /* sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha256.h; sourceTree = "<group>"; };
+		759B7DFF243D401F001ECF3D /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		759B7E00243D401F001ECF3D /* md.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md.h; sourceTree = "<group>"; };
+		759B7E01243D401F001ECF3D /* cipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cipher.h; sourceTree = "<group>"; };
+		759B7E02243D401F001ECF3D /* entropy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entropy.h; sourceTree = "<group>"; };
+		759B7E03243D401F001ECF3D /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs12.h; sourceTree = "<group>"; };
+		759B7E04243D401F001ECF3D /* padlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = padlock.h; sourceTree = "<group>"; };
+		759B7E05243D401F001ECF3D /* sha512.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha512.h; sourceTree = "<group>"; };
+		759B7E06243D401F001ECF3D /* bn_mul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn_mul.h; sourceTree = "<group>"; };
+		759B7E07243D401F001ECF3D /* pk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pk.h; sourceTree = "<group>"; };
+		759B7E08243D401F001ECF3D /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
+		759B7E09243D401F001ECF3D /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camellia.h; sourceTree = "<group>"; };
+		759B7E0A243D401F001ECF3D /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		759B7E0B243D401F001ECF3D /* x509_crt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_crt.h; sourceTree = "<group>"; };
+		759B7E0C243D401F001ECF3D /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		759B7E0D243D401F001ECF3D /* pk_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pk_internal.h; sourceTree = "<group>"; };
+		759B7E0E243D401F001ECF3D /* ssl_cookie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl_cookie.h; sourceTree = "<group>"; };
+		759B7E0F243D401F001ECF3D /* dhm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dhm.h; sourceTree = "<group>"; };
+		759B7E10243D401F001ECF3D /* aesni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesni.h; sourceTree = "<group>"; };
+		759B7E11243D401F001ECF3D /* ctr_drbg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ctr_drbg.h; sourceTree = "<group>"; };
+		759B7E12243D401F001ECF3D /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		759B7E13243D401F001ECF3D /* x509_crl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_crl.h; sourceTree = "<group>"; };
+		759B7E14243D401F001ECF3D /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdh.h; sourceTree = "<group>"; };
+		759B7E15243D401F001ECF3D /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		759B7E16243D401F001ECF3D /* gcm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gcm.h; sourceTree = "<group>"; };
+		759B7E17243D401F001ECF3D /* certs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = certs.h; sourceTree = "<group>"; };
+		759B7E18243D401F001ECF3D /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		759B7E19243D401F001ECF3D /* hmac_drbg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac_drbg.h; sourceTree = "<group>"; };
+		759B7E1A243D401F001ECF3D /* ssl_ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl_ticket.h; sourceTree = "<group>"; };
+		759B7E1B243D401F001ECF3D /* ssl_ciphersuites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl_ciphersuites.h; sourceTree = "<group>"; };
+		759B7E1C243D401F001ECF3D /* ssl_cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl_cache.h; sourceTree = "<group>"; };
+		759B7E1D243D401F001ECF3D /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		759B7E1E243D401F001ECF3D /* bignum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bignum.h; sourceTree = "<group>"; };
+		759B7E1F243D401F001ECF3D /* entropy_poll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entropy_poll.h; sourceTree = "<group>"; };
+		759B7E20243D401F001ECF3D /* havege.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = havege.h; sourceTree = "<group>"; };
+		759B7E21243D401F001ECF3D /* asn1write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1write.h; sourceTree = "<group>"; };
+		759B7E22243D401F001ECF3D /* ccm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccm.h; sourceTree = "<group>"; };
+		759B7E24243D401F001ECF3D /* Nullable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Nullable.hpp; sourceTree = "<group>"; };
+		759B7E25243D401F001ECF3D /* ArraySegment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ArraySegment.hpp; sourceTree = "<group>"; };
+		759B7E26243D401F001ECF3D /* Bytes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bytes.hpp; sourceTree = "<group>"; };
+		759B7E27243D401F001ECF3D /* FailableForward.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FailableForward.hpp; sourceTree = "<group>"; };
+		759B7E2A243D401F001ECF3D /* IRTCommand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IRTCommand.hpp; sourceTree = "<group>"; };
+		759B7E2B243D401F001ECF3D /* GameSparksRT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSparksRT.cpp; sourceTree = "<group>"; };
+		759B7E2C243D401F001ECF3D /* RTSessionImpl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RTSessionImpl.hpp; sourceTree = "<group>"; };
+		759B7E2E243D401F001ECF3D /* RTData.Serializer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RTData.Serializer.cpp; sourceTree = "<group>"; };
+		759B7E2F243D401F001ECF3D /* LimitedPositionStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LimitedPositionStream.cpp; sourceTree = "<group>"; };
+		759B7E30243D401F001ECF3D /* ProtocolBufferException.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ProtocolBufferException.hpp; sourceTree = "<group>"; };
+		759B7E31243D401F001ECF3D /* ProtocolParser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ProtocolParser.hpp; sourceTree = "<group>"; };
+		759B7E32243D401F001ECF3D /* ReusableBinaryWriter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ReusableBinaryWriter.hpp; sourceTree = "<group>"; };
+		759B7E33243D401F001ECF3D /* PositionStream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PositionStream.hpp; sourceTree = "<group>"; };
+		759B7E34243D401F001ECF3D /* RTVal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RTVal.cpp; sourceTree = "<group>"; };
+		759B7E35243D401F001ECF3D /* Packet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Packet.cpp; sourceTree = "<group>"; };
+		759B7E36243D401F001ECF3D /* Packet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Packet.hpp; sourceTree = "<group>"; };
+		759B7E37243D401F001ECF3D /* RTData.Serializer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RTData.Serializer.hpp; sourceTree = "<group>"; };
+		759B7E38243D401F001ECF3D /* LimitedPositionStream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LimitedPositionStream.hpp; sourceTree = "<group>"; };
+		759B7E39243D401F001ECF3D /* ReusableBinaryWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReusableBinaryWriter.cpp; sourceTree = "<group>"; };
+		759B7E3A243D401F001ECF3D /* PositionStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PositionStream.cpp; sourceTree = "<group>"; };
+		759B7E3C243D401F001ECF3D /* Connection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Connection.hpp; sourceTree = "<group>"; };
+		759B7E3D243D401F001ECF3D /* ReliableConnection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ReliableConnection.hpp; sourceTree = "<group>"; };
+		759B7E3E243D401F001ECF3D /* FastConnection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FastConnection.cpp; sourceTree = "<group>"; };
+		759B7E3F243D401F001ECF3D /* ReliableConnection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReliableConnection.cpp; sourceTree = "<group>"; };
+		759B7E40243D401F001ECF3D /* FastConnection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FastConnection.hpp; sourceTree = "<group>"; };
+		759B7E41243D401F001ECF3D /* Connection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Connection.cpp; sourceTree = "<group>"; };
+		759B7E42243D401F001ECF3D /* IRTSessionInternal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IRTSessionInternal.hpp; sourceTree = "<group>"; };
+		759B7E43243D401F001ECF3D /* RTData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RTData.cpp; sourceTree = "<group>"; };
+		759B7E45243D401F001ECF3D /* CommandFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CommandFactory.hpp; sourceTree = "<group>"; };
+		759B7E46243D401F001ECF3D /* LogCommand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LogCommand.hpp; sourceTree = "<group>"; };
+		759B7E47243D401F001ECF3D /* ActionCommand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ActionCommand.hpp; sourceTree = "<group>"; };
+		759B7E48243D401F001ECF3D /* CustomCommand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CustomCommand.hpp; sourceTree = "<group>"; };
+		759B7E4A243D401F001ECF3D /* PingCommand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PingCommand.hpp; sourceTree = "<group>"; };
+		759B7E4B243D401F001ECF3D /* RTRequest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RTRequest.hpp; sourceTree = "<group>"; };
+		759B7E4C243D401F001ECF3D /* CustomRequest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CustomRequest.hpp; sourceTree = "<group>"; };
+		759B7E4D243D401F001ECF3D /* LoginCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoginCommand.cpp; sourceTree = "<group>"; };
+		759B7E4E243D401F001ECF3D /* CustomRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomRequest.cpp; sourceTree = "<group>"; };
+		759B7E4F243D401F001ECF3D /* LoginCommand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LoginCommand.hpp; sourceTree = "<group>"; };
+		759B7E50243D401F001ECF3D /* PingCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PingCommand.cpp; sourceTree = "<group>"; };
+		759B7E52243D401F001ECF3D /* PingResult.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PingResult.hpp; sourceTree = "<group>"; };
+		759B7E53243D401F001ECF3D /* PlayerDisconnectMessage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PlayerDisconnectMessage.hpp; sourceTree = "<group>"; };
+		759B7E54243D401F001ECF3D /* LoginResult.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LoginResult.hpp; sourceTree = "<group>"; };
+		759B7E55243D401F001ECF3D /* PlayerConnectMessage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PlayerConnectMessage.hpp; sourceTree = "<group>"; };
+		759B7E56243D401F001ECF3D /* UDPConnectMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UDPConnectMessage.cpp; sourceTree = "<group>"; };
+		759B7E57243D401F001ECF3D /* PlayerConnectMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerConnectMessage.cpp; sourceTree = "<group>"; };
+		759B7E58243D401F001ECF3D /* AbstractResult.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AbstractResult.hpp; sourceTree = "<group>"; };
+		759B7E59243D401F001ECF3D /* UDPConnectMessage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UDPConnectMessage.hpp; sourceTree = "<group>"; };
+		759B7E5A243D401F001ECF3D /* PingResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PingResult.cpp; sourceTree = "<group>"; };
+		759B7E5B243D401F001ECF3D /* PlayerDisconnectMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerDisconnectMessage.cpp; sourceTree = "<group>"; };
+		759B7E5C243D401F001ECF3D /* LoginResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoginResult.cpp; sourceTree = "<group>"; };
+		759B7E5D243D401F001ECF3D /* CustomCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomCommand.cpp; sourceTree = "<group>"; };
+		759B7E5E243D401F001ECF3D /* CommandFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandFactory.cpp; sourceTree = "<group>"; };
+		759B7E5F243D401F001ECF3D /* LogCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogCommand.cpp; sourceTree = "<group>"; };
+		759B7E60243D401F001ECF3D /* ActionCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ActionCommand.cpp; sourceTree = "<group>"; };
+		759B7E61243D401F001ECF3D /* RTSessionImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RTSessionImpl.cpp; sourceTree = "<group>"; };
+		759B7E63243D401F001ECF3D /* x509_create.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x509_create.c; sourceTree = "<group>"; };
+		759B7E64243D401F001ECF3D /* x509_crt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x509_crt.c; sourceTree = "<group>"; };
+		759B7E65243D401F001ECF3D /* aes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes.c; sourceTree = "<group>"; };
+		759B7E66243D401F001ECF3D /* md4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md4.c; sourceTree = "<group>"; };
+		759B7E67243D401F001ECF3D /* ssl_srv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssl_srv.c; sourceTree = "<group>"; };
+		759B7E68243D401F001ECF3D /* camellia.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = camellia.c; sourceTree = "<group>"; };
+		759B7E69243D401F001ECF3D /* pk_wrap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pk_wrap.c; sourceTree = "<group>"; };
+		759B7E6A243D401F001ECF3D /* pk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pk.c; sourceTree = "<group>"; };
+		759B7E6B243D401F001ECF3D /* ecdh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ecdh.c; sourceTree = "<group>"; };
+		759B7E6C243D401F001ECF3D /* ssl_tls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssl_tls.c; sourceTree = "<group>"; };
+		759B7E6D243D401F001ECF3D /* x509_crl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x509_crl.c; sourceTree = "<group>"; };
+		759B7E6E243D401F001ECF3D /* cipher_wrap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cipher_wrap.c; sourceTree = "<group>"; };
+		759B7E6F243D401F001ECF3D /* des.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = des.c; sourceTree = "<group>"; };
+		759B7E70243D401F001ECF3D /* ssl_cookie.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssl_cookie.c; sourceTree = "<group>"; };
+		759B7E71243D401F001ECF3D /* ctr_drbg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ctr_drbg.c; sourceTree = "<group>"; };
+		759B7E72243D401F001ECF3D /* aesni.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aesni.c; sourceTree = "<group>"; };
+		759B7E73243D401F001ECF3D /* dhm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dhm.c; sourceTree = "<group>"; };
+		759B7E74243D401F001ECF3D /* ssl_cache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssl_cache.c; sourceTree = "<group>"; };
+		759B7E75243D401F001ECF3D /* ssl_ciphersuites.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssl_ciphersuites.c; sourceTree = "<group>"; };
+		759B7E76243D401F001ECF3D /* hmac_drbg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac_drbg.c; sourceTree = "<group>"; };
+		759B7E77243D401F001ECF3D /* rsa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rsa.c; sourceTree = "<group>"; };
+		759B7E78243D401F001ECF3D /* ssl_ticket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssl_ticket.c; sourceTree = "<group>"; };
+		759B7E79243D401F001ECF3D /* asn1parse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = asn1parse.c; sourceTree = "<group>"; };
+		759B7E7A243D401F001ECF3D /* certs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = certs.c; sourceTree = "<group>"; };
+		759B7E7B243D401F001ECF3D /* pkwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pkwrite.c; sourceTree = "<group>"; };
+		759B7E7C243D401F001ECF3D /* gcm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gcm.c; sourceTree = "<group>"; };
+		759B7E7D243D401F001ECF3D /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		759B7E7E243D401F001ECF3D /* asn1write.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = asn1write.c; sourceTree = "<group>"; };
+		759B7E7F243D401F001ECF3D /* havege.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = havege.c; sourceTree = "<group>"; };
+		759B7E80243D401F001ECF3D /* ccm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ccm.c; sourceTree = "<group>"; };
+		759B7E81243D401F001ECF3D /* version_features.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = version_features.c; sourceTree = "<group>"; };
+		759B7E82243D401F001ECF3D /* entropy_poll.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entropy_poll.c; sourceTree = "<group>"; };
+		759B7E83243D401F001ECF3D /* x509write_csr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x509write_csr.c; sourceTree = "<group>"; };
+		759B7E84243D401F001ECF3D /* platform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = platform.c; sourceTree = "<group>"; };
+		759B7E85243D401F001ECF3D /* bignum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bignum.c; sourceTree = "<group>"; };
+		759B7E86243D401F001ECF3D /* pkparse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pkparse.c; sourceTree = "<group>"; };
+		759B7E87243D401F001ECF3D /* debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
+		759B7E88243D401F001ECF3D /* ripemd160.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ripemd160.c; sourceTree = "<group>"; };
+		759B7E89243D401F001ECF3D /* ssl_cli.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssl_cli.c; sourceTree = "<group>"; };
+		759B7E8A243D401F001ECF3D /* blowfish.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blowfish.c; sourceTree = "<group>"; };
+		759B7E8B243D401F001ECF3D /* pkcs5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pkcs5.c; sourceTree = "<group>"; };
+		759B7E8C243D401F001ECF3D /* pem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pem.c; sourceTree = "<group>"; };
+		759B7E8D243D401F001ECF3D /* oid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oid.c; sourceTree = "<group>"; };
+		759B7E8E243D401F001ECF3D /* error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = error.c; sourceTree = "<group>"; };
+		759B7E8F243D401F001ECF3D /* md2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md2.c; sourceTree = "<group>"; };
+		759B7E90243D401F001ECF3D /* md_wrap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md_wrap.c; sourceTree = "<group>"; };
+		759B7E91243D401F001ECF3D /* x509_csr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x509_csr.c; sourceTree = "<group>"; };
+		759B7E92243D401F001ECF3D /* pkcs11.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pkcs11.c; sourceTree = "<group>"; };
+		759B7E93243D401F001ECF3D /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		759B7E94243D401F001ECF3D /* memory_buffer_alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memory_buffer_alloc.c; sourceTree = "<group>"; };
+		759B7E95243D401F001ECF3D /* net.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net.c; sourceTree = "<group>"; };
+		759B7E96243D401F001ECF3D /* ecp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ecp.c; sourceTree = "<group>"; };
+		759B7E97243D401F001ECF3D /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = version.c; sourceTree = "<group>"; };
+		759B7E98243D401F001ECF3D /* x509.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x509.c; sourceTree = "<group>"; };
+		759B7E99243D401F001ECF3D /* sha256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha256.c; sourceTree = "<group>"; };
+		759B7E9A243D401F001ECF3D /* ecp_curves.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ecp_curves.c; sourceTree = "<group>"; };
+		759B7E9B243D401F001ECF3D /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		759B7E9C243D401F001ECF3D /* arc4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arc4.c; sourceTree = "<group>"; };
+		759B7E9D243D401F001ECF3D /* timing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = timing.c; sourceTree = "<group>"; };
+		759B7E9E243D401F001ECF3D /* xtea.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xtea.c; sourceTree = "<group>"; };
+		759B7E9F243D401F001ECF3D /* x509write_crt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x509write_crt.c; sourceTree = "<group>"; };
+		759B7EA0243D401F001ECF3D /* threading.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = threading.c; sourceTree = "<group>"; };
+		759B7EA1243D401F001ECF3D /* padlock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = padlock.c; sourceTree = "<group>"; };
+		759B7EA2243D401F001ECF3D /* pkcs12.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pkcs12.c; sourceTree = "<group>"; };
+		759B7EA3243D401F001ECF3D /* entropy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entropy.c; sourceTree = "<group>"; };
+		759B7EA4243D401F001ECF3D /* sha512.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha512.c; sourceTree = "<group>"; };
+		759B7EA5243D401F001ECF3D /* md.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md.c; sourceTree = "<group>"; };
+		759B7EA6243D401F001ECF3D /* cipher.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cipher.c; sourceTree = "<group>"; };
+		759B7EA7243D401F001ECF3D /* ecdsa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ecdsa.c; sourceTree = "<group>"; };
+		759B7EA9243D401F001ECF3D /* ArgumentException.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ArgumentException.hpp; sourceTree = "<group>"; };
+		759B7EAA243D401F001ECF3D /* IAsyncResult.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IAsyncResult.hpp; sourceTree = "<group>"; };
+		759B7EAB243D401F001ECF3D /* Action.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Action.hpp; sourceTree = "<group>"; };
+		759B7EAE243D401F001ECF3D /* SocketOptionLevel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SocketOptionLevel.hpp; sourceTree = "<group>"; };
+		759B7EAF243D401F001ECF3D /* SocketType.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SocketType.hpp; sourceTree = "<group>"; };
+		759B7EB0243D401F001ECF3D /* NetworkStream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NetworkStream.hpp; sourceTree = "<group>"; };
+		759B7EB1243D401F001ECF3D /* TLSSocket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TLSSocket.hpp; sourceTree = "<group>"; };
+		759B7EB2243D401F001ECF3D /* Socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Socket.cpp; sourceTree = "<group>"; };
+		759B7EB3243D401F001ECF3D /* SocketOptionName.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SocketOptionName.hpp; sourceTree = "<group>"; };
+		759B7EB4243D401F001ECF3D /* UdpClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UdpClient.hpp; sourceTree = "<group>"; };
+		759B7EB5243D401F001ECF3D /* TcpClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TcpClient.cpp; sourceTree = "<group>"; };
+		759B7EB6243D401F001ECF3D /* Socket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Socket.hpp; sourceTree = "<group>"; };
+		759B7EB7243D401F001ECF3D /* TLSSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TLSSocket.cpp; sourceTree = "<group>"; };
+		759B7EB8243D401F001ECF3D /* ProtocolType.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ProtocolType.hpp; sourceTree = "<group>"; };
+		759B7EB9243D401F001ECF3D /* UdpClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UdpClient.cpp; sourceTree = "<group>"; };
+		759B7EBA243D401F001ECF3D /* TcpClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TcpClient.hpp; sourceTree = "<group>"; };
+		759B7EBB243D401F001ECF3D /* NetworkStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkStream.cpp; sourceTree = "<group>"; };
+		759B7EBC243D401F001ECF3D /* AddressFamily.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AddressFamily.hpp; sourceTree = "<group>"; };
+		759B7EBD243D401F001ECF3D /* IPEndPoint.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IPEndPoint.hpp; sourceTree = "<group>"; };
+		759B7EBE243D401F001ECF3D /* ArgumentOutOfRangeException.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ArgumentOutOfRangeException.hpp; sourceTree = "<group>"; };
+		759B7EBF243D401F001ECF3D /* InvalidOperationException.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = InvalidOperationException.hpp; sourceTree = "<group>"; };
+		759B7EC1243D401F001ECF3D /* EndOfStreamException.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EndOfStreamException.hpp; sourceTree = "<group>"; };
+		759B7EC2243D401F001ECF3D /* BinaryReader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BinaryReader.hpp; sourceTree = "<group>"; };
+		759B7EC3243D401F001ECF3D /* SeekOrigin.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SeekOrigin.hpp; sourceTree = "<group>"; };
+		759B7EC4243D401F001ECF3D /* MemoryStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryStream.cpp; sourceTree = "<group>"; };
+		759B7EC5243D401F001ECF3D /* Stream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Stream.hpp; sourceTree = "<group>"; };
+		759B7EC6243D401F001ECF3D /* BinaryWriter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BinaryWriter.hpp; sourceTree = "<group>"; };
+		759B7EC7243D401F001ECF3D /* IOException.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IOException.hpp; sourceTree = "<group>"; };
+		759B7EC8243D401F001ECF3D /* MemoryStream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MemoryStream.hpp; sourceTree = "<group>"; };
+		759B7EC9243D401F001ECF3D /* Stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stream.cpp; sourceTree = "<group>"; };
+		759B7ECA243D401F001ECF3D /* BinaryWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryWriter.cpp; sourceTree = "<group>"; };
+		759B7ECB243D401F001ECF3D /* BinaryReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryReader.cpp; sourceTree = "<group>"; };
+		759B7ECC243D401F001ECF3D /* AsyncCallback.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AsyncCallback.hpp; sourceTree = "<group>"; };
+		759B7ECD243D401F001ECF3D /* ObjectDisposedException.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ObjectDisposedException.hpp; sourceTree = "<group>"; };
+		759B7ECE243D401F001ECF3D /* String.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = String.hpp; sourceTree = "<group>"; };
+		759B7ED1243D401F001ECF3D /* UTF8.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UTF8.hpp; sourceTree = "<group>"; };
+		759B7ED2243D401F001ECF3D /* UTF8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UTF8.cpp; sourceTree = "<group>"; };
+		759B7ED3243D401F001ECF3D /* NotSupportedException.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NotSupportedException.hpp; sourceTree = "<group>"; };
+		759B7ED5243D401F001ECF3D /* Thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Thread.cpp; sourceTree = "<group>"; };
+		759B7ED6243D401F001ECF3D /* Thread.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Thread.hpp; sourceTree = "<group>"; };
+		759B7ED7243D401F001ECF3D /* NotImplementedException.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NotImplementedException.hpp; sourceTree = "<group>"; };
+		759B7ED8243D401F001ECF3D /* Failable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Failable.hpp; sourceTree = "<group>"; };
+		759B7ED9243D401F001ECF3D /* Exception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Exception.hpp; sourceTree = "<group>"; };
+		759B7EDA243D401F001ECF3D /* SystemException.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SystemException.hpp; sourceTree = "<group>"; };
+		759B7EDC243D401F001ECF3D /* CertificateStore.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CertificateStore.hpp; sourceTree = "<group>"; };
+		759B7EDD243D401F001ECF3D /* GSRT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSRT.h; sourceTree = "<group>"; };
+		759B7EDE243D401F001ECF3D /* GSRT.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GSRT.mm; sourceTree = "<group>"; };
+		759B7F48243D4078001ECF3D /* Citadels-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Citadels-Bridging-Header.h"; sourceTree = "<group>"; };
 		75F316C0241725A10023AD86 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +428,8 @@
 		7536CA0324136931002739CF = {
 			isa = PBXGroup;
 			children = (
+				759B7F48243D4078001ECF3D /* Citadels-Bridging-Header.h */,
+				759B7DD5243D401E001ECF3D /* RT */,
 				7536CA0E24136931002739CF /* Citadels */,
 				7536CA0D24136931002739CF /* Products */,
 			);
@@ -130,6 +481,432 @@
 				754A2EB8242407AC00EB3EF9 /* EstateView.swift */,
 			);
 			path = GameBoard;
+			sourceTree = "<group>";
+		};
+		759B7DD5243D401E001ECF3D /* RT */ = {
+			isa = PBXGroup;
+			children = (
+				759B7DD6243D401E001ECF3D /* BaseSDK */,
+				759B7EDD243D401F001ECF3D /* GSRT.h */,
+				759B7EDE243D401F001ECF3D /* GSRT.mm */,
+			);
+			path = RT;
+			sourceTree = "<group>";
+		};
+		759B7DD6243D401E001ECF3D /* BaseSDK */ = {
+			isa = PBXGroup;
+			children = (
+				759B7DD7243D401E001ECF3D /* include */,
+				759B7E28243D401F001ECF3D /* src */,
+			);
+			path = BaseSDK;
+			sourceTree = "<group>";
+		};
+		759B7DD7243D401E001ECF3D /* include */ = {
+			isa = PBXGroup;
+			children = (
+				759B7DD8243D401E001ECF3D /* GameSparksRT */,
+				759B7DE1243D401E001ECF3D /* mbedtls */,
+				759B7E23243D401F001ECF3D /* System */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		759B7DD8243D401E001ECF3D /* GameSparksRT */ = {
+			isa = PBXGroup;
+			children = (
+				759B7DD9243D401E001ECF3D /* Proto */,
+				759B7DDB243D401E001ECF3D /* IRTSessionListener.hpp */,
+				759B7DDC243D401E001ECF3D /* Forwards.hpp */,
+				759B7DDD243D401E001ECF3D /* GSLinking.hpp */,
+				759B7DDE243D401E001ECF3D /* RTData.hpp */,
+				759B7DDF243D401E001ECF3D /* GameSparksRT.hpp */,
+				759B7DE0243D401E001ECF3D /* IRTSession.hpp */,
+			);
+			path = GameSparksRT;
+			sourceTree = "<group>";
+		};
+		759B7DD9243D401E001ECF3D /* Proto */ = {
+			isa = PBXGroup;
+			children = (
+				759B7DDA243D401E001ECF3D /* RTVal.hpp */,
+			);
+			path = Proto;
+			sourceTree = "<group>";
+		};
+		759B7DE1243D401E001ECF3D /* mbedtls */ = {
+			isa = PBXGroup;
+			children = (
+				759B7DE2243D401E001ECF3D /* pem.h */,
+				759B7DE3243D401E001ECF3D /* check_config.h */,
+				759B7DE4243D401E001ECF3D /* error.h */,
+				759B7DE5243D401E001ECF3D /* md2.h */,
+				759B7DE6243D401E001ECF3D /* oid.h */,
+				759B7DE7243D401E001ECF3D /* pkcs5.h */,
+				759B7DE8243D401E001ECF3D /* ripemd160.h */,
+				759B7DE9243D401E001ECF3D /* blowfish.h */,
+				759B7DEA243D401E001ECF3D /* debug.h */,
+				759B7DEB243D401F001ECF3D /* x509.h */,
+				759B7DEC243D401F001ECF3D /* version.h */,
+				759B7DED243D401F001ECF3D /* ecp.h */,
+				759B7DEE243D401F001ECF3D /* net.h */,
+				759B7DEF243D401F001ECF3D /* cipher_internal.h */,
+				759B7DF0243D401F001ECF3D /* md_internal.h */,
+				759B7DF1243D401F001ECF3D /* base64.h */,
+				759B7DF2243D401F001ECF3D /* pkcs11.h */,
+				759B7DF3243D401F001ECF3D /* ssl_internal.h */,
+				759B7DF4243D401F001ECF3D /* asn1.h */,
+				759B7DF5243D401F001ECF3D /* config.h */,
+				759B7DF6243D401F001ECF3D /* memory_buffer_alloc.h */,
+				759B7DF7243D401F001ECF3D /* x509_csr.h */,
+				759B7DF8243D401F001ECF3D /* xtea.h */,
+				759B7DF9243D401F001ECF3D /* threading.h */,
+				759B7DFA243D401F001ECF3D /* compat-1.3.h */,
+				759B7DFB243D401F001ECF3D /* md5.h */,
+				759B7DFC243D401F001ECF3D /* timing.h */,
+				759B7DFD243D401F001ECF3D /* arc4.h */,
+				759B7DFE243D401F001ECF3D /* sha256.h */,
+				759B7DFF243D401F001ECF3D /* ecdsa.h */,
+				759B7E00243D401F001ECF3D /* md.h */,
+				759B7E01243D401F001ECF3D /* cipher.h */,
+				759B7E02243D401F001ECF3D /* entropy.h */,
+				759B7E03243D401F001ECF3D /* pkcs12.h */,
+				759B7E04243D401F001ECF3D /* padlock.h */,
+				759B7E05243D401F001ECF3D /* sha512.h */,
+				759B7E06243D401F001ECF3D /* bn_mul.h */,
+				759B7E07243D401F001ECF3D /* pk.h */,
+				759B7E08243D401F001ECF3D /* ssl.h */,
+				759B7E09243D401F001ECF3D /* camellia.h */,
+				759B7E0A243D401F001ECF3D /* md4.h */,
+				759B7E0B243D401F001ECF3D /* x509_crt.h */,
+				759B7E0C243D401F001ECF3D /* aes.h */,
+				759B7E0D243D401F001ECF3D /* pk_internal.h */,
+				759B7E0E243D401F001ECF3D /* ssl_cookie.h */,
+				759B7E0F243D401F001ECF3D /* dhm.h */,
+				759B7E10243D401F001ECF3D /* aesni.h */,
+				759B7E11243D401F001ECF3D /* ctr_drbg.h */,
+				759B7E12243D401F001ECF3D /* des.h */,
+				759B7E13243D401F001ECF3D /* x509_crl.h */,
+				759B7E14243D401F001ECF3D /* ecdh.h */,
+				759B7E15243D401F001ECF3D /* sha1.h */,
+				759B7E16243D401F001ECF3D /* gcm.h */,
+				759B7E17243D401F001ECF3D /* certs.h */,
+				759B7E18243D401F001ECF3D /* rsa.h */,
+				759B7E19243D401F001ECF3D /* hmac_drbg.h */,
+				759B7E1A243D401F001ECF3D /* ssl_ticket.h */,
+				759B7E1B243D401F001ECF3D /* ssl_ciphersuites.h */,
+				759B7E1C243D401F001ECF3D /* ssl_cache.h */,
+				759B7E1D243D401F001ECF3D /* platform.h */,
+				759B7E1E243D401F001ECF3D /* bignum.h */,
+				759B7E1F243D401F001ECF3D /* entropy_poll.h */,
+				759B7E20243D401F001ECF3D /* havege.h */,
+				759B7E21243D401F001ECF3D /* asn1write.h */,
+				759B7E22243D401F001ECF3D /* ccm.h */,
+			);
+			path = mbedtls;
+			sourceTree = "<group>";
+		};
+		759B7E23243D401F001ECF3D /* System */ = {
+			isa = PBXGroup;
+			children = (
+				759B7E24243D401F001ECF3D /* Nullable.hpp */,
+				759B7E25243D401F001ECF3D /* ArraySegment.hpp */,
+				759B7E26243D401F001ECF3D /* Bytes.hpp */,
+				759B7E27243D401F001ECF3D /* FailableForward.hpp */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		759B7E28243D401F001ECF3D /* src */ = {
+			isa = PBXGroup;
+			children = (
+				759B7E29243D401F001ECF3D /* GameSparksRT */,
+				759B7E62243D401F001ECF3D /* mbedtls */,
+				759B7EA8243D401F001ECF3D /* System */,
+				759B7EDB243D401F001ECF3D /* easywsclient */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		759B7E29243D401F001ECF3D /* GameSparksRT */ = {
+			isa = PBXGroup;
+			children = (
+				759B7E2A243D401F001ECF3D /* IRTCommand.hpp */,
+				759B7E2B243D401F001ECF3D /* GameSparksRT.cpp */,
+				759B7E2C243D401F001ECF3D /* RTSessionImpl.hpp */,
+				759B7E2D243D401F001ECF3D /* Proto */,
+				759B7E3B243D401F001ECF3D /* Connection */,
+				759B7E42243D401F001ECF3D /* IRTSessionInternal.hpp */,
+				759B7E43243D401F001ECF3D /* RTData.cpp */,
+				759B7E44243D401F001ECF3D /* Commands */,
+				759B7E61243D401F001ECF3D /* RTSessionImpl.cpp */,
+			);
+			path = GameSparksRT;
+			sourceTree = "<group>";
+		};
+		759B7E2D243D401F001ECF3D /* Proto */ = {
+			isa = PBXGroup;
+			children = (
+				759B7E2E243D401F001ECF3D /* RTData.Serializer.cpp */,
+				759B7E2F243D401F001ECF3D /* LimitedPositionStream.cpp */,
+				759B7E30243D401F001ECF3D /* ProtocolBufferException.hpp */,
+				759B7E31243D401F001ECF3D /* ProtocolParser.hpp */,
+				759B7E32243D401F001ECF3D /* ReusableBinaryWriter.hpp */,
+				759B7E33243D401F001ECF3D /* PositionStream.hpp */,
+				759B7E34243D401F001ECF3D /* RTVal.cpp */,
+				759B7E35243D401F001ECF3D /* Packet.cpp */,
+				759B7E36243D401F001ECF3D /* Packet.hpp */,
+				759B7E37243D401F001ECF3D /* RTData.Serializer.hpp */,
+				759B7E38243D401F001ECF3D /* LimitedPositionStream.hpp */,
+				759B7E39243D401F001ECF3D /* ReusableBinaryWriter.cpp */,
+				759B7E3A243D401F001ECF3D /* PositionStream.cpp */,
+			);
+			path = Proto;
+			sourceTree = "<group>";
+		};
+		759B7E3B243D401F001ECF3D /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				759B7E3C243D401F001ECF3D /* Connection.hpp */,
+				759B7E3D243D401F001ECF3D /* ReliableConnection.hpp */,
+				759B7E3E243D401F001ECF3D /* FastConnection.cpp */,
+				759B7E3F243D401F001ECF3D /* ReliableConnection.cpp */,
+				759B7E40243D401F001ECF3D /* FastConnection.hpp */,
+				759B7E41243D401F001ECF3D /* Connection.cpp */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		759B7E44243D401F001ECF3D /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				759B7E45243D401F001ECF3D /* CommandFactory.hpp */,
+				759B7E46243D401F001ECF3D /* LogCommand.hpp */,
+				759B7E47243D401F001ECF3D /* ActionCommand.hpp */,
+				759B7E48243D401F001ECF3D /* CustomCommand.hpp */,
+				759B7E49243D401F001ECF3D /* Requests */,
+				759B7E51243D401F001ECF3D /* Results */,
+				759B7E5D243D401F001ECF3D /* CustomCommand.cpp */,
+				759B7E5E243D401F001ECF3D /* CommandFactory.cpp */,
+				759B7E5F243D401F001ECF3D /* LogCommand.cpp */,
+				759B7E60243D401F001ECF3D /* ActionCommand.cpp */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		759B7E49243D401F001ECF3D /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				759B7E4A243D401F001ECF3D /* PingCommand.hpp */,
+				759B7E4B243D401F001ECF3D /* RTRequest.hpp */,
+				759B7E4C243D401F001ECF3D /* CustomRequest.hpp */,
+				759B7E4D243D401F001ECF3D /* LoginCommand.cpp */,
+				759B7E4E243D401F001ECF3D /* CustomRequest.cpp */,
+				759B7E4F243D401F001ECF3D /* LoginCommand.hpp */,
+				759B7E50243D401F001ECF3D /* PingCommand.cpp */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		759B7E51243D401F001ECF3D /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				759B7E52243D401F001ECF3D /* PingResult.hpp */,
+				759B7E53243D401F001ECF3D /* PlayerDisconnectMessage.hpp */,
+				759B7E54243D401F001ECF3D /* LoginResult.hpp */,
+				759B7E55243D401F001ECF3D /* PlayerConnectMessage.hpp */,
+				759B7E56243D401F001ECF3D /* UDPConnectMessage.cpp */,
+				759B7E57243D401F001ECF3D /* PlayerConnectMessage.cpp */,
+				759B7E58243D401F001ECF3D /* AbstractResult.hpp */,
+				759B7E59243D401F001ECF3D /* UDPConnectMessage.hpp */,
+				759B7E5A243D401F001ECF3D /* PingResult.cpp */,
+				759B7E5B243D401F001ECF3D /* PlayerDisconnectMessage.cpp */,
+				759B7E5C243D401F001ECF3D /* LoginResult.cpp */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+		759B7E62243D401F001ECF3D /* mbedtls */ = {
+			isa = PBXGroup;
+			children = (
+				759B7E63243D401F001ECF3D /* x509_create.c */,
+				759B7E64243D401F001ECF3D /* x509_crt.c */,
+				759B7E65243D401F001ECF3D /* aes.c */,
+				759B7E66243D401F001ECF3D /* md4.c */,
+				759B7E67243D401F001ECF3D /* ssl_srv.c */,
+				759B7E68243D401F001ECF3D /* camellia.c */,
+				759B7E69243D401F001ECF3D /* pk_wrap.c */,
+				759B7E6A243D401F001ECF3D /* pk.c */,
+				759B7E6B243D401F001ECF3D /* ecdh.c */,
+				759B7E6C243D401F001ECF3D /* ssl_tls.c */,
+				759B7E6D243D401F001ECF3D /* x509_crl.c */,
+				759B7E6E243D401F001ECF3D /* cipher_wrap.c */,
+				759B7E6F243D401F001ECF3D /* des.c */,
+				759B7E70243D401F001ECF3D /* ssl_cookie.c */,
+				759B7E71243D401F001ECF3D /* ctr_drbg.c */,
+				759B7E72243D401F001ECF3D /* aesni.c */,
+				759B7E73243D401F001ECF3D /* dhm.c */,
+				759B7E74243D401F001ECF3D /* ssl_cache.c */,
+				759B7E75243D401F001ECF3D /* ssl_ciphersuites.c */,
+				759B7E76243D401F001ECF3D /* hmac_drbg.c */,
+				759B7E77243D401F001ECF3D /* rsa.c */,
+				759B7E78243D401F001ECF3D /* ssl_ticket.c */,
+				759B7E79243D401F001ECF3D /* asn1parse.c */,
+				759B7E7A243D401F001ECF3D /* certs.c */,
+				759B7E7B243D401F001ECF3D /* pkwrite.c */,
+				759B7E7C243D401F001ECF3D /* gcm.c */,
+				759B7E7D243D401F001ECF3D /* sha1.c */,
+				759B7E7E243D401F001ECF3D /* asn1write.c */,
+				759B7E7F243D401F001ECF3D /* havege.c */,
+				759B7E80243D401F001ECF3D /* ccm.c */,
+				759B7E81243D401F001ECF3D /* version_features.c */,
+				759B7E82243D401F001ECF3D /* entropy_poll.c */,
+				759B7E83243D401F001ECF3D /* x509write_csr.c */,
+				759B7E84243D401F001ECF3D /* platform.c */,
+				759B7E85243D401F001ECF3D /* bignum.c */,
+				759B7E86243D401F001ECF3D /* pkparse.c */,
+				759B7E87243D401F001ECF3D /* debug.c */,
+				759B7E88243D401F001ECF3D /* ripemd160.c */,
+				759B7E89243D401F001ECF3D /* ssl_cli.c */,
+				759B7E8A243D401F001ECF3D /* blowfish.c */,
+				759B7E8B243D401F001ECF3D /* pkcs5.c */,
+				759B7E8C243D401F001ECF3D /* pem.c */,
+				759B7E8D243D401F001ECF3D /* oid.c */,
+				759B7E8E243D401F001ECF3D /* error.c */,
+				759B7E8F243D401F001ECF3D /* md2.c */,
+				759B7E90243D401F001ECF3D /* md_wrap.c */,
+				759B7E91243D401F001ECF3D /* x509_csr.c */,
+				759B7E92243D401F001ECF3D /* pkcs11.c */,
+				759B7E93243D401F001ECF3D /* base64.c */,
+				759B7E94243D401F001ECF3D /* memory_buffer_alloc.c */,
+				759B7E95243D401F001ECF3D /* net.c */,
+				759B7E96243D401F001ECF3D /* ecp.c */,
+				759B7E97243D401F001ECF3D /* version.c */,
+				759B7E98243D401F001ECF3D /* x509.c */,
+				759B7E99243D401F001ECF3D /* sha256.c */,
+				759B7E9A243D401F001ECF3D /* ecp_curves.c */,
+				759B7E9B243D401F001ECF3D /* md5.c */,
+				759B7E9C243D401F001ECF3D /* arc4.c */,
+				759B7E9D243D401F001ECF3D /* timing.c */,
+				759B7E9E243D401F001ECF3D /* xtea.c */,
+				759B7E9F243D401F001ECF3D /* x509write_crt.c */,
+				759B7EA0243D401F001ECF3D /* threading.c */,
+				759B7EA1243D401F001ECF3D /* padlock.c */,
+				759B7EA2243D401F001ECF3D /* pkcs12.c */,
+				759B7EA3243D401F001ECF3D /* entropy.c */,
+				759B7EA4243D401F001ECF3D /* sha512.c */,
+				759B7EA5243D401F001ECF3D /* md.c */,
+				759B7EA6243D401F001ECF3D /* cipher.c */,
+				759B7EA7243D401F001ECF3D /* ecdsa.c */,
+			);
+			path = mbedtls;
+			sourceTree = "<group>";
+		};
+		759B7EA8243D401F001ECF3D /* System */ = {
+			isa = PBXGroup;
+			children = (
+				759B7EA9243D401F001ECF3D /* ArgumentException.hpp */,
+				759B7EAA243D401F001ECF3D /* IAsyncResult.hpp */,
+				759B7EAB243D401F001ECF3D /* Action.hpp */,
+				759B7EAC243D401F001ECF3D /* Net */,
+				759B7EBE243D401F001ECF3D /* ArgumentOutOfRangeException.hpp */,
+				759B7EBF243D401F001ECF3D /* InvalidOperationException.hpp */,
+				759B7EC0243D401F001ECF3D /* IO */,
+				759B7ECC243D401F001ECF3D /* AsyncCallback.hpp */,
+				759B7ECD243D401F001ECF3D /* ObjectDisposedException.hpp */,
+				759B7ECE243D401F001ECF3D /* String.hpp */,
+				759B7ECF243D401F001ECF3D /* Text */,
+				759B7ED3243D401F001ECF3D /* NotSupportedException.hpp */,
+				759B7ED4243D401F001ECF3D /* Threading */,
+				759B7ED7243D401F001ECF3D /* NotImplementedException.hpp */,
+				759B7ED8243D401F001ECF3D /* Failable.hpp */,
+				759B7ED9243D401F001ECF3D /* Exception.hpp */,
+				759B7EDA243D401F001ECF3D /* SystemException.hpp */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		759B7EAC243D401F001ECF3D /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				759B7EAD243D401F001ECF3D /* Sockets */,
+				759B7EBD243D401F001ECF3D /* IPEndPoint.hpp */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		759B7EAD243D401F001ECF3D /* Sockets */ = {
+			isa = PBXGroup;
+			children = (
+				759B7EAE243D401F001ECF3D /* SocketOptionLevel.hpp */,
+				759B7EAF243D401F001ECF3D /* SocketType.hpp */,
+				759B7EB0243D401F001ECF3D /* NetworkStream.hpp */,
+				759B7EB1243D401F001ECF3D /* TLSSocket.hpp */,
+				759B7EB2243D401F001ECF3D /* Socket.cpp */,
+				759B7EB3243D401F001ECF3D /* SocketOptionName.hpp */,
+				759B7EB4243D401F001ECF3D /* UdpClient.hpp */,
+				759B7EB5243D401F001ECF3D /* TcpClient.cpp */,
+				759B7EB6243D401F001ECF3D /* Socket.hpp */,
+				759B7EB7243D401F001ECF3D /* TLSSocket.cpp */,
+				759B7EB8243D401F001ECF3D /* ProtocolType.hpp */,
+				759B7EB9243D401F001ECF3D /* UdpClient.cpp */,
+				759B7EBA243D401F001ECF3D /* TcpClient.hpp */,
+				759B7EBB243D401F001ECF3D /* NetworkStream.cpp */,
+				759B7EBC243D401F001ECF3D /* AddressFamily.hpp */,
+			);
+			path = Sockets;
+			sourceTree = "<group>";
+		};
+		759B7EC0243D401F001ECF3D /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				759B7EC1243D401F001ECF3D /* EndOfStreamException.hpp */,
+				759B7EC2243D401F001ECF3D /* BinaryReader.hpp */,
+				759B7EC3243D401F001ECF3D /* SeekOrigin.hpp */,
+				759B7EC4243D401F001ECF3D /* MemoryStream.cpp */,
+				759B7EC5243D401F001ECF3D /* Stream.hpp */,
+				759B7EC6243D401F001ECF3D /* BinaryWriter.hpp */,
+				759B7EC7243D401F001ECF3D /* IOException.hpp */,
+				759B7EC8243D401F001ECF3D /* MemoryStream.hpp */,
+				759B7EC9243D401F001ECF3D /* Stream.cpp */,
+				759B7ECA243D401F001ECF3D /* BinaryWriter.cpp */,
+				759B7ECB243D401F001ECF3D /* BinaryReader.cpp */,
+			);
+			path = IO;
+			sourceTree = "<group>";
+		};
+		759B7ECF243D401F001ECF3D /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				759B7ED0243D401F001ECF3D /* Encoding */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		759B7ED0243D401F001ECF3D /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				759B7ED1243D401F001ECF3D /* UTF8.hpp */,
+				759B7ED2243D401F001ECF3D /* UTF8.cpp */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		759B7ED4243D401F001ECF3D /* Threading */ = {
+			isa = PBXGroup;
+			children = (
+				759B7ED5243D401F001ECF3D /* Thread.cpp */,
+				759B7ED6243D401F001ECF3D /* Thread.hpp */,
+			);
+			path = Threading;
+			sourceTree = "<group>";
+		};
+		759B7EDB243D401F001ECF3D /* easywsclient */ = {
+			isa = PBXGroup;
+			children = (
+				759B7EDC243D401F001ECF3D /* CertificateStore.hpp */,
+			);
+			path = easywsclient;
 			sourceTree = "<group>";
 		};
 		75D2DCE12416EBF20001870B /* Views */ = {
@@ -225,22 +1002,127 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				759B7EFE243D401F001ECF3D /* pk.c in Sources */,
+				759B7EF4243D401F001ECF3D /* LogCommand.cpp in Sources */,
+				759B7F2F243D401F001ECF3D /* md5.c in Sources */,
+				759B7F44243D401F001ECF3D /* BinaryReader.cpp in Sources */,
+				759B7EF3243D401F001ECF3D /* CommandFactory.cpp in Sources */,
+				759B7F07243D401F001ECF3D /* dhm.c in Sources */,
+				759B7EEF243D401F001ECF3D /* PingResult.cpp in Sources */,
+				759B7F2D243D401F001ECF3D /* sha256.c in Sources */,
+				759B7F39243D401F001ECF3D /* md.c in Sources */,
+				759B7EF8243D401F001ECF3D /* x509_crt.c in Sources */,
+				759B7F24243D401F001ECF3D /* md_wrap.c in Sources */,
 				755DA57C242A99C900CC712A /* EachOpponentView.swift in Sources */,
+				759B7EEA243D401F001ECF3D /* LoginCommand.cpp in Sources */,
 				7536CA1024136931002739CF /* AppDelegate.swift in Sources */,
+				759B7F2A243D401F001ECF3D /* ecp.c in Sources */,
+				759B7F28243D401F001ECF3D /* memory_buffer_alloc.c in Sources */,
+				759B7F1E243D401F001ECF3D /* blowfish.c in Sources */,
+				759B7F29243D401F001ECF3D /* net.c in Sources */,
+				759B7F0B243D401F001ECF3D /* rsa.c in Sources */,
+				759B7F04243D401F001ECF3D /* ssl_cookie.c in Sources */,
+				759B7F15243D401F001ECF3D /* version_features.c in Sources */,
+				759B7EF0243D401F001ECF3D /* PlayerDisconnectMessage.cpp in Sources */,
+				759B7F17243D401F001ECF3D /* x509write_csr.c in Sources */,
+				759B7F21243D401F001ECF3D /* oid.c in Sources */,
 				7536CA1224136931002739CF /* SceneDelegate.swift in Sources */,
 				754A2EB52423F0DF00EB3EF9 /* StatusView.swift in Sources */,
+				759B7EEE243D401F001ECF3D /* PlayerConnectMessage.cpp in Sources */,
+				759B7F3E243D401F001ECF3D /* TLSSocket.cpp in Sources */,
+				759B7EFF243D401F001ECF3D /* ecdh.c in Sources */,
+				759B7F25243D401F001ECF3D /* x509_csr.c in Sources */,
+				759B7F13243D401F001ECF3D /* havege.c in Sources */,
+				759B7F19243D401F001ECF3D /* bignum.c in Sources */,
+				759B7EFA243D401F001ECF3D /* md4.c in Sources */,
+				759B7F40243D401F001ECF3D /* NetworkStream.cpp in Sources */,
+				759B7EF2243D401F001ECF3D /* CustomCommand.cpp in Sources */,
+				759B7F38243D401F001ECF3D /* sha512.c in Sources */,
+				759B7EF5243D401F001ECF3D /* ActionCommand.cpp in Sources */,
 				754A2EBB24240A5B00EB3EF9 /* OpponentView.swift in Sources */,
+				759B7F1C243D401F001ECF3D /* ripemd160.c in Sources */,
+				759B7EE8243D401F001ECF3D /* Connection.cpp in Sources */,
+				759B7F02243D401F001ECF3D /* cipher_wrap.c in Sources */,
+				759B7EEC243D401F001ECF3D /* PingCommand.cpp in Sources */,
+				759B7F36243D401F001ECF3D /* pkcs12.c in Sources */,
+				759B7F3A243D401F001ECF3D /* cipher.c in Sources */,
+				759B7EED243D401F001ECF3D /* UDPConnectMessage.cpp in Sources */,
 				7536CA2C24136D9E002739CF /* Data.swift in Sources */,
+				759B7EF9243D401F001ECF3D /* aes.c in Sources */,
+				759B7F3C243D401F001ECF3D /* Socket.cpp in Sources */,
+				759B7F35243D401F001ECF3D /* padlock.c in Sources */,
+				759B7F20243D401F001ECF3D /* pem.c in Sources */,
+				759B7F08243D401F001ECF3D /* ssl_cache.c in Sources */,
+				759B7F18243D401F001ECF3D /* platform.c in Sources */,
+				759B7F42243D401F001ECF3D /* Stream.cpp in Sources */,
+				759B7F1A243D401F001ECF3D /* pkparse.c in Sources */,
+				759B7EFD243D401F001ECF3D /* pk_wrap.c in Sources */,
+				759B7F32243D401F001ECF3D /* xtea.c in Sources */,
+				759B7F41243D401F001ECF3D /* MemoryStream.cpp in Sources */,
+				759B7F2E243D401F001ECF3D /* ecp_curves.c in Sources */,
+				759B7F2B243D401F001ECF3D /* version.c in Sources */,
+				759B7F30243D401F001ECF3D /* arc4.c in Sources */,
+				759B7F47243D401F001ECF3D /* GSRT.mm in Sources */,
+				759B7F01243D401F001ECF3D /* x509_crl.c in Sources */,
+				759B7EE3243D401F001ECF3D /* Packet.cpp in Sources */,
+				759B7F05243D401F001ECF3D /* ctr_drbg.c in Sources */,
 				754A2EB72423F1E600EB3EF9 /* CharacterView.swift in Sources */,
+				759B7EE2243D401F001ECF3D /* RTVal.cpp in Sources */,
+				759B7F10243D401F001ECF3D /* gcm.c in Sources */,
+				759B7F27243D401F001ECF3D /* base64.c in Sources */,
+				759B7F0D243D401F001ECF3D /* asn1parse.c in Sources */,
+				759B7F03243D401F001ECF3D /* des.c in Sources */,
+				759B7F16243D401F001ECF3D /* entropy_poll.c in Sources */,
+				759B7EE6243D401F001ECF3D /* FastConnection.cpp in Sources */,
+				759B7F2C243D401F001ECF3D /* x509.c in Sources */,
+				759B7F1D243D401F001ECF3D /* ssl_cli.c in Sources */,
+				759B7EE1243D401F001ECF3D /* LimitedPositionStream.cpp in Sources */,
+				759B7F0C243D401F001ECF3D /* ssl_ticket.c in Sources */,
 				754A2EB22423DE3D00EB3EF9 /* GameboardView.swift in Sources */,
 				754A2EB02423DE2A00EB3EF9 /* PlayerView.swift in Sources */,
+				759B7F34243D401F001ECF3D /* threading.c in Sources */,
+				759B7F00243D401F001ECF3D /* ssl_tls.c in Sources */,
 				75F316C1241725A10023AD86 /* CardsView.swift in Sources */,
+				759B7F1B243D401F001ECF3D /* debug.c in Sources */,
+				759B7F09243D401F001ECF3D /* ssl_ciphersuites.c in Sources */,
+				759B7EDF243D401F001ECF3D /* GameSparksRT.cpp in Sources */,
+				759B7F46243D401F001ECF3D /* Thread.cpp in Sources */,
+				759B7F26243D401F001ECF3D /* pkcs11.c in Sources */,
+				759B7F45243D401F001ECF3D /* UTF8.cpp in Sources */,
+				759B7EE9243D401F001ECF3D /* RTData.cpp in Sources */,
 				7536CA2624136A7C002739CF /* Character.swift in Sources */,
+				759B7F23243D401F001ECF3D /* md2.c in Sources */,
+				759B7F43243D401F001ECF3D /* BinaryWriter.cpp in Sources */,
+				759B7EE5243D401F001ECF3D /* PositionStream.cpp in Sources */,
+				759B7EF7243D401F001ECF3D /* x509_create.c in Sources */,
+				759B7EE0243D401F001ECF3D /* RTData.Serializer.cpp in Sources */,
+				759B7F3F243D401F001ECF3D /* UdpClient.cpp in Sources */,
+				759B7F11243D401F001ECF3D /* sha1.c in Sources */,
 				7536CA2A24136C67002739CF /* GameManager.swift in Sources */,
+				759B7F37243D401F001ECF3D /* entropy.c in Sources */,
+				759B7EEB243D401F001ECF3D /* CustomRequest.cpp in Sources */,
+				759B7F22243D401F001ECF3D /* error.c in Sources */,
+				759B7F3D243D401F001ECF3D /* TcpClient.cpp in Sources */,
+				759B7F3B243D401F001ECF3D /* ecdsa.c in Sources */,
+				759B7F0F243D401F001ECF3D /* pkwrite.c in Sources */,
+				759B7EF1243D401F001ECF3D /* LoginResult.cpp in Sources */,
+				759B7EFB243D401F001ECF3D /* ssl_srv.c in Sources */,
 				7536CA1424136931002739CF /* ContentView.swift in Sources */,
+				759B7F06243D401F001ECF3D /* aesni.c in Sources */,
+				759B7F33243D401F001ECF3D /* x509write_crt.c in Sources */,
+				759B7F1F243D401F001ECF3D /* pkcs5.c in Sources */,
+				759B7F31243D401F001ECF3D /* timing.c in Sources */,
+				759B7F14243D401F001ECF3D /* ccm.c in Sources */,
 				7536CA2824136B32002739CF /* Player.swift in Sources */,
 				754A2EB9242407AC00EB3EF9 /* EstateView.swift in Sources */,
+				759B7F0E243D401F001ECF3D /* certs.c in Sources */,
+				759B7EFC243D401F001ECF3D /* camellia.c in Sources */,
+				759B7F12243D401F001ECF3D /* asn1write.c in Sources */,
+				759B7EE4243D401F001ECF3D /* ReusableBinaryWriter.cpp in Sources */,
+				759B7EE7243D401F001ECF3D /* ReliableConnection.cpp in Sources */,
+				759B7EF6243D401F001ECF3D /* RTSessionImpl.cpp in Sources */,
 				7536CA24241369AE002739CF /* District.swift in Sources */,
+				759B7F0A243D401F001ECF3D /* hmac_drbg.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +1196,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Citadels-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(GameSpark)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -367,6 +1251,8 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "Citadels-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(GameSpark)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
