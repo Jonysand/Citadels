@@ -10,9 +10,18 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var GM:GameManager
+    @State var isAuthenticated:Bool = false
     
     var body: some View {
-        GameboardView()
+        HStack{
+            if self.isAuthenticated{
+                HomeView()
+                    .transition(.move(edge: .leading))
+            }else{
+                LoginView(isAuthenticated: $isAuthenticated)
+            }
+        }.animation(.easeInOut)
+//        GameboardView()
     }
 }
 

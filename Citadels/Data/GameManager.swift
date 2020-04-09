@@ -8,7 +8,9 @@
 
 import Foundation
 import SwiftUI
-import GameSpark
+import Configuration
+
+let manager = ConfigurationManager()
 
 struct DraggedCard{
     var card:District
@@ -23,6 +25,10 @@ class GameManager:ObservableObject{
     var currentPlayer: Int = 0
     var Deck: [District] = []
     
+    // Game Spark setting
+    let GSapiKey:String
+    let GSapiSecret:String
+    var gs:GS
     // for local player
     @Published var draggedCard:DraggedCard? = nil;
     
@@ -31,5 +37,37 @@ class GameManager:ObservableObject{
         initDeck(Deck: &Deck)
         
         // Game Spart settup
+        manager.load(file: "GScrecidential.json", relativeFrom: .project)
+        GSapiKey = (manager["apiKey"] as? String)!
+        GSapiSecret = (manager["apiSecret"] as? String)!
+        gs = GS.init(apiKey:GSapiKey, andApiSecret:GSapiSecret, andCredential:"device", andPreviewMode: true)
+        print(GSapiKey)
+//        print(gs.connect())
+    }
+    
+    //
+    func login(username:String, password:String){
+        let loginRequest = GSAuthenticationRequest()
+        loginRequest.setUserName(username)
+        loginRequest.setPassword(password)
+        loginRequest.setCallback({ response in
+            if (response != nil){
+                print(response!.getDisplayName() ?? "No Display Name")
+            }else{
+                print("Auth Failed")
+            }
+        })
+        self.gs.send(loginRequest)
+        let account = username
+        let password = password.data(using: String.Encoding.utf8)!
+        let query: [String: Any] = [kSecClass as String: kSecClassInternetPassword,
+                                    kSecAttrAccount as String: account,
+                                    kSecAttrServer as String: "gamesparks.net",
+                                    kSecValueData as String: password]
+        let status = SecItemAdd(query as CFDictionary, nil)
+        guard status == errSecSuccess else {
+            print("Keychain Failed")
+            return
+        }
     }
 }
