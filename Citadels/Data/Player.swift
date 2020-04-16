@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-class Player:Hashable{
+class Player:Hashable, ObservableObject{
     static func == (lhs: Player, rhs: Player) -> Bool {
         return lhs.id == rhs.id
     }
@@ -19,15 +19,15 @@ class Player:Hashable{
     
     var id:Int
     var Hand: [District]
-    var Estate: [District]
+    var Estate: [District] = []
     var Role: Character
     var Wealth: Int = 2
     var hasAction: Bool = true
+    @Published var Name:String = "Player"
     
-    init(id:Int, Hand: [District], Estate: [District], Role: Character) {
+    init(id:Int, Hand: [District], Role: Character) {
         self.id = id
         self.Hand = Hand
-        self.Estate = Estate
         self.Role = Role
     }
     

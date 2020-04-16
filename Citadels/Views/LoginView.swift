@@ -10,44 +10,62 @@ import SwiftUI
 
 struct LoginView: View {
     @EnvironmentObject var GM:GameManager
-    @Binding var isAuthenticated:Bool
-    
     @State private var credentials:Credentials = Credentials()
     
     var body: some View {
         VStack{
+            Image("CitadelsLogo")
+                .resizable()
+                .scaledToFit()
+                .shadow(radius: 10)
+                .padding(50)
+            Spacer()
+                .frame(height: 175)
             TextField("Username", text: $credentials.username)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .textContentType(.username)
-                .padding()
+                .padding(.horizontal, 80)
+                .padding(.vertical, 10)
             SecureField("Password", text: $credentials.password)
                 .textContentType(.password)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+                .padding(.horizontal, 80)
+                .padding(.vertical, 10)
             HStack{
                 Button(action:{
                     self.GM.login(username: self.credentials.username, password: self.credentials.password)
-                    self.isAuthenticated = self.GM.gs.isAuthenticated()
                 }){
-                    Text("Log In")
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 10)
+                        Text("Log In")
+                            .font(.custom("Albertus Medium", size: 20))
+                            .foregroundColor(.white)
+                    }
+                    .frame(width:100, height:50)
                 }
                 .padding()
                 Button(action:{
                     
                 }){
-                    Text("Sign Up")
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 10)
+                        Text("Sign Up")
+                            .font(.custom("Albertus Medium", size: 20))
+                            .foregroundColor(.white)
+                    }
+                    .frame(width:100, height:50)
                 }
                 .padding()
             }
+            Spacer()
         }
-        
+        .background(Image("LoginBG"))
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
-    @State static var isAuthenticated:Bool = false
     static var previews: some View {
-        LoginView(isAuthenticated: $isAuthenticated)
+        LoginView()
     }
 }
 

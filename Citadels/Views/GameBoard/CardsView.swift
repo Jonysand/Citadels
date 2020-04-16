@@ -34,7 +34,7 @@ struct CardsView: View {
                                     Text("Build")
                                     Image(systemName: "house")
                                 }
-                            }
+                        }
                     }
                 }
             }.animation(.easeInOut)

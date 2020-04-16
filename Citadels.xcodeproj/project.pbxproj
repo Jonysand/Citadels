@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		750435F524468AE60099F872 /* GameAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750435F424468AE60099F872 /* GameAlert.swift */; };
 		75141E41242AF69C00A70CB7 /* VILLAGE.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 75141E40242AF69C00A70CB7 /* VILLAGE.TTF */; };
 		75141E43242AF84F00A70CB7 /* AlbertusMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75141E42242AF84F00A70CB7 /* AlbertusMedium.ttf */; };
 		7530C243243F5BEB00DBB28B /* GScrecidential.json in Resources */ = {isa = PBXBuildFile; fileRef = 7530C242243F5BEB00DBB28B /* GScrecidential.json */; };
@@ -142,13 +143,15 @@
 		758FE40C243D6D0400A581E0 /* JFRSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 758FE399243D6D0300A581E0 /* JFRSecurity.m */; };
 		758FE40D243D6D0400A581E0 /* GSAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 758FE39D243D6D0300A581E0 /* GSAPI.m */; };
 		758FE40F243D6F3500A581E0 /* Citadels-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 758FE40E243D6F3500A581E0 /* Citadels-Bridging-Header.m */; };
+		75A4C08F24478601000F4C0B /* DebugAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A4C08E24478601000F4C0B /* DebugAI.swift */; };
+		75A4C091244795D9000F4C0B /* PickCharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A4C090244795D9000F4C0B /* PickCharactersView.swift */; };
 		75D57C20243E5FC900105A60 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D57C1F243E5FC900105A60 /* LoginView.swift */; };
 		75D57C22243E720E00105A60 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D57C21243E720E00105A60 /* HomeView.swift */; };
-		75D57C24243E7C5700105A60 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D57C23243E7C5700105A60 /* ProfileView.swift */; };
 		75F316C1241725A10023AD86 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F316C0241725A10023AD86 /* CardsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		750435F424468AE60099F872 /* GameAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAlert.swift; sourceTree = "<group>"; };
 		75141E40242AF69C00A70CB7 /* VILLAGE.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = VILLAGE.TTF; sourceTree = "<group>"; };
 		75141E42242AF84F00A70CB7 /* AlbertusMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AlbertusMedium.ttf; sourceTree = "<group>"; };
 		7530C242243F5BEB00DBB28B /* GScrecidential.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GScrecidential.json; sourceTree = "<group>"; };
@@ -430,9 +433,10 @@
 		758FE39C243D6D0300A581E0 /* JFRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFRWebSocket.h; sourceTree = "<group>"; };
 		758FE39D243D6D0300A581E0 /* GSAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSAPI.m; sourceTree = "<group>"; };
 		758FE40E243D6F3500A581E0 /* Citadels-Bridging-Header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Citadels-Bridging-Header.m"; sourceTree = "<group>"; };
+		75A4C08E24478601000F4C0B /* DebugAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugAI.swift; sourceTree = "<group>"; };
+		75A4C090244795D9000F4C0B /* PickCharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickCharactersView.swift; sourceTree = "<group>"; };
 		75D57C1F243E5FC900105A60 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		75D57C21243E720E00105A60 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		75D57C23243E7C5700105A60 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		75F316C0241725A10023AD86 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -448,6 +452,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		750435F624469A540099F872 /* Prompt */ = {
+			isa = PBXGroup;
+			children = (
+				750435F424468AE60099F872 /* GameAlert.swift */,
+				75A4C090244795D9000F4C0B /* PickCharactersView.swift */,
+			);
+			path = Prompt;
+			sourceTree = "<group>";
+		};
 		75141E3F242AF68700A70CB7 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,6 +516,7 @@
 			isa = PBXGroup;
 			children = (
 				754A2EB12423DE3D00EB3EF9 /* GameboardView.swift */,
+				750435F624469A540099F872 /* Prompt */,
 				754A2EBA24240A5B00EB3EF9 /* OpponentView.swift */,
 				755DA57B242A99C900CC712A /* EachOpponentView.swift */,
 				754A2EAF2423DE2A00EB3EF9 /* PlayerView.swift */,
@@ -968,7 +982,6 @@
 			children = (
 				75D57C1F243E5FC900105A60 /* LoginView.swift */,
 				75D57C21243E720E00105A60 /* HomeView.swift */,
-				75D57C23243E7C5700105A60 /* ProfileView.swift */,
 				754A2EB32423F0C800EB3EF9 /* GameBoard */,
 			);
 			path = Views;
@@ -981,6 +994,7 @@
 				7536CA2524136A7C002739CF /* Character.swift */,
 				7536CA2724136B32002739CF /* Player.swift */,
 				7536CA2924136C67002739CF /* GameManager.swift */,
+				75A4C08E24478601000F4C0B /* DebugAI.swift */,
 				7536CA2B24136D9E002739CF /* Data.swift */,
 				7530C242243F5BEB00DBB28B /* GScrecidential.json */,
 			);
@@ -1078,7 +1092,6 @@
 				758FE3A4243D6D0300A581E0 /* LimitedPositionStream.cpp in Sources */,
 				758FE3BD243D6D0300A581E0 /* md4.c in Sources */,
 				758FE3DB243D6D0400A581E0 /* platform.c in Sources */,
-				75D57C24243E7C5700105A60 /* ProfileView.swift in Sources */,
 				758FE3E3243D6D0400A581E0 /* pem.c in Sources */,
 				758FE3DD243D6D0400A581E0 /* pkparse.c in Sources */,
 				758FE3B6243D6D0300A581E0 /* CommandFactory.cpp in Sources */,
@@ -1099,6 +1112,7 @@
 				758FE40C243D6D0400A581E0 /* JFRSecurity.m in Sources */,
 				758FE3EA243D6D0400A581E0 /* base64.c in Sources */,
 				758FE3AE243D6D0300A581E0 /* CustomRequest.cpp in Sources */,
+				750435F524468AE60099F872 /* GameAlert.swift in Sources */,
 				758FE402243D6D0400A581E0 /* UdpClient.cpp in Sources */,
 				758FE3A5243D6D0300A581E0 /* RTVal.cpp in Sources */,
 				758FE3DA243D6D0400A581E0 /* x509write_csr.c in Sources */,
@@ -1130,6 +1144,7 @@
 				754A2EB72423F1E600EB3EF9 /* CharacterView.swift in Sources */,
 				758FE3E9243D6D0400A581E0 /* pkcs11.c in Sources */,
 				758FE3BC243D6D0300A581E0 /* aes.c in Sources */,
+				75A4C08F24478601000F4C0B /* DebugAI.swift in Sources */,
 				758FE3FD243D6D0400A581E0 /* cipher.c in Sources */,
 				758FE3D3243D6D0400A581E0 /* gcm.c in Sources */,
 				754A2EB22423DE3D00EB3EF9 /* GameboardView.swift in Sources */,
@@ -1137,6 +1152,7 @@
 				758FE406243D6D0400A581E0 /* BinaryWriter.cpp in Sources */,
 				758FE405243D6D0400A581E0 /* Stream.cpp in Sources */,
 				758FE3E8243D6D0400A581E0 /* x509_csr.c in Sources */,
+				75A4C091244795D9000F4C0B /* PickCharactersView.swift in Sources */,
 				758FE3ED243D6D0400A581E0 /* ecp.c in Sources */,
 				758FE3EF243D6D0400A581E0 /* x509.c in Sources */,
 				758FE3CE243D6D0400A581E0 /* rsa.c in Sources */,

@@ -17,9 +17,11 @@ struct Characters {
     let Merchant = Character(Index: 6, Name: "Merchant")
     let Architect = Character(Index: 7, Name: "Architect")
     let Warlord = Character(Index: 8, Name: "Warlord")
+    let Unknown = Character(Index: 0, Name: "UnknownCharacter")
     var list: [Character] = []
     
     init(){
+        list.append(Unknown)
         list.append(Assasin)
         list.append(Thief)
         list.append(Magician)
@@ -117,31 +119,35 @@ struct ExampleData {
     init() {
         // init player list
         // Player.id==0 -> local player
-        for i in 0..<4 {
-            // draw cards
+        for playerIndex in 0..<GM.playerCount {
+            // each player draws 4 cards
             var handList: [District] = []
-            for _ in 0..<Int.random(in: 1..<5){
+            for _ in 0..<4{
                 let drawIndex = Int.random(in: 0..<GM.Deck.count)
                 let oneCard = GM.Deck[drawIndex]
                 GM.Deck.remove(at: drawIndex)
                 oneCard.currentState = 1
                 handList.append(oneCard)
             }
+            
             // put estates
-            var estateList: [District] = []
-            for _ in 0..<Int.random(in: 1..<5){
-                let drawIndex = Int.random(in: 0..<GM.Deck.count)
-                let oneCard = GM.Deck[drawIndex]
-                GM.Deck.remove(at: drawIndex)
-                oneCard.currentState = 2
-                estateList.append(oneCard)
-            }
-            let player = Player(id: i, Hand: handList, Estate: estateList, Role: characters.list[i])
+//            var estateList: [District] = []
+//            for _ in 0..<Int.random(in: 1..<5){
+//                let drawIndex = Int.random(in: 0..<GM.Deck.count)
+//                let oneCard = GM.Deck[drawIndex]
+//                GM.Deck.remove(at: drawIndex)
+//                oneCard.currentState = 2
+//                estateList.append(oneCard)
+//            }
+            
+            let player = Player(id: playerIndex, Hand: handList, Role: characters.list[0])
             PlayerList.append(player)
         }
         
+        // choose an initial king
+        
         // init game manager
         GM.PlayerList = PlayerList
-        GM.currentPlayer = PlayerList[0].Role.Index
+        GM.currentPlayer = PlayerList[0].Role.Index == 0 ? 1:PlayerList[0].Role.Index
     }
 }

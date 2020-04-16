@@ -22,6 +22,7 @@ struct OpponentView: View {
                 }
             }
             .frame(height: 400)
+            .animation(.easeInOut)
         }
     }
     

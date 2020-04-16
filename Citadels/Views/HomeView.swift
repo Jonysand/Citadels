@@ -20,21 +20,34 @@ struct HomeView: View {
             }else{
                 VStack(alignment:.leading){
                     Image(systemName: "person.circle")
-                    Text("Player Name")
+                    Text(self.GM.PlayerList[0].Name)
                         .padding()
+                        
+                    
                     Button(action:{
                         
                     }){
-                        Text("Create a Session")
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 10)
+                            Text("Create a Session")
+                                .font(.custom("Albertus Medium", size: 20))
+                                .foregroundColor(.white)
+                        }.frame(width:200, height:50)
                     }.padding()
                     
                     Button(action:{
                         self.isGameStart = true
                     }){
-                        Text("Join a Session")
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 10)
+                            Text("Join a Session")
+                                .font(.custom("Albertus Medium", size: 20))
+                                .foregroundColor(.white)
+                        }.frame(width:200, height:50)
                     }
                     .padding()
                 }
+                .background(Image("LoginBG"))
             }
         }
     }
